@@ -45,9 +45,9 @@
                             <v-flex md2>
 
                             </v-flex>
-                         <v-flex  md8 class="mx-auto">
-                                <v-container>
-                                    <v-layout>
+                         <v-flex  md8 class=" ">
+                                <v-container class="green--text">
+                                    <v-layout >
                                         <v-flex md2>
                                              <Span>
                                                 About Rotary
@@ -58,8 +58,8 @@
                                                 <v-list flat color ="grey lighten-4"
                                                 class="text-no-wrap ">
                                                     <v-list-item>
-                                                        <v-list-item-title>
-                                                            Overview
+                                                        <v-list-item-title >
+                                                             Overview
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
