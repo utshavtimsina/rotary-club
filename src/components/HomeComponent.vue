@@ -38,7 +38,7 @@
          </v-flex>
        </v-layout>
        <v-layout row>
-         <v-flex md2>
+         <v-flex md1>
 
          </v-flex>
          <v-flex md4>
