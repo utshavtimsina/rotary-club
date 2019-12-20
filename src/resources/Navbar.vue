@@ -18,7 +18,7 @@
               <v-icon  class="body-2">mdi-home-outline</v-icon>
                 <span class="body-2" color="#39424a">My Rotary</span>
                 <v-divider class="mx-2" vertical inset></v-divider>
-                <v-icon  class="body-2" >mdi-pin</v-icon>
+                <v-icon  class="body-2" >mdi-map-marker-multiple</v-icon>
                 <span  class="body-2" color="#39424a"> Club Finder</span>
                 <v-text-field
                     style="width:10px;"
@@ -45,7 +45,7 @@
                             <v-flex md2>
 
                             </v-flex>
-                         <v-flex  md8 class=" ">
+                         <v-flex  md8 class="mx-auto">
                                 <v-container>
                                     <v-layout>
                                         <v-flex md2>
@@ -359,7 +359,7 @@ a{
     text-decoration: none;
 }
 .content{
-     transition-property: width;
+    transition-property: width;
     transition-delay: 1s;
     display: none;
      
