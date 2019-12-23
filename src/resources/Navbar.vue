@@ -4,11 +4,13 @@
           <v-toolbar md12 >
           <v-spacer></v-spacer>
            <v-app-bar-nav-icon>
-            <v-img 
-                contain 
-                src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/rotary-logo-color-2019-simplified.svg"
-                max-width="8rem"
-            ></v-img>
+               <router-link to="/" flat>
+                <v-img 
+                    contain 
+                    src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/rotary-logo-color-2019-simplified.svg"
+                    max-width="8rem"
+                ></v-img>
+            </router-link>
             </v-app-bar-nav-icon>
          
             <v-spacer></v-spacer>
@@ -41,14 +43,12 @@
             <v-card class="" color="grey lighten-4">
             
                     <v-container class="hover" color="#5e717d">
-                        <v-layout row class="pa-2 ">
-                            <v-flex md2>
+                        <v-layout align-center="true" row class="pa-2 ">
+                            <v-flex xs0 sm0 md2>
 
                             </v-flex>
-                         <v-flex  md8 class=" ">
-                                <v-container class="green--text">
-                                    <v-layout >
-                                        <v-flex md2>
+                         <v-flex xs0 sm0 md10 >
+                                    <div class=" mx-9" style="display:inline-block;">
                                              <Span>
                                                 About Rotary
                                                 
@@ -58,8 +58,20 @@
                                                 <v-list flat color ="grey lighten-4"
                                                 class="text-no-wrap ">
                                                     <v-list-item>
-                                                        <v-list-item-title >
-                                                             Overview
+                                                        <v-list-item-title  >
+                                                            <router-link to="/overview">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                    Overview
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
@@ -104,65 +116,8 @@
                                                     </v-list-item>
                                                 </v-list>
                                             </div>
-                                        </v-flex>
-                                        <v-flex md2>
-                                             <Span>
-                                                About Rotary
-                                                
-                                            </Span>
-                                            
-                                            <div  width="100%" class=" content ">
-                                                <v-list flat color ="grey lighten-4"
-                                                class="text-no-wrap ">
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Overview
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            History
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Our Structure
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Our Foundation
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Our Leaders
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Financials
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Partners
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Membership
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Careers
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                </v-list>
-                                            </div>
-                                        </v-flex>
-                                        <v-flex md2>
+                                        </div>
+                                        <div class=" mx-9"  style="display:inline-block;">
                                              <Span>
                                                 About Rotary
                                                 
@@ -218,8 +173,8 @@
                                                     </v-list-item>
                                                 </v-list>
                                             </div>
-                                        </v-flex>
-                                        <v-flex md2>
+                                        </div>
+                                        <div class=" mx-9"  style="display:inline-block;">
                                              <Span>
                                                 About Rotary
                                                 
@@ -275,8 +230,8 @@
                                                     </v-list-item>
                                                 </v-list>
                                             </div>
-                                        </v-flex>
-                                        <v-flex md2>
+                                        </div>
+                                       <div class=" mx-9"  style="display:inline-block;">
                                              <Span>
                                                 About Rotary
                                                 
@@ -332,11 +287,64 @@
                                                     </v-list-item>
                                                 </v-list>
                                             </div>
-                                        </v-flex>
-                                    </v-layout>
-                                </v-container>
-                               
-                                
+                                       </div>
+                                        <div class=" mx-9"  style="display:inline-block;">
+                                             <Span>
+                                                About Rotary
+                                                
+                                            </Span>
+                                            
+                                            <div  width="100%" class=" content ">
+                                                <v-list flat color ="grey lighten-4"
+                                                class="text-no-wrap ">
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Overview
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            History
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Our Structure
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Our Foundation
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Our Leaders
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Financials
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Partners
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Membership
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Careers
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                </v-list>
+                                            </div>
+                                        </div>
                             </v-flex>
                            
                         </v-layout>
