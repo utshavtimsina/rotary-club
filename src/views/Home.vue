@@ -198,7 +198,7 @@
         </v-card>
        </v-card><!-- end of purple Div also includes Join Leaders Components -->
        <bodyfooter/><!-- footer1 -->
-          <pagefooter/>
+       <pagefooter/>
   </div>
 </template>
 
