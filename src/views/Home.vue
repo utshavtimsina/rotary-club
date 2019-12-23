@@ -69,6 +69,8 @@
         <HomeComponent/>
         <hover/>
     </v-card>
+          <bodyfooter/>
+          <pagefooter/>
   </div>
 </template>
 
@@ -76,11 +78,15 @@
 // @ is an alias to /src
 import hover from './hoverimgcomponent'
 import HomeComponent from '@/components/HomeComponent.vue';
+import bodyfooter from '@/components/bodyfooter.vue';
+import pagefooter from '@/components/footer.vue';
 export default {
   name: "home",
   components: {
     hover,
     HomeComponent,
+    bodyfooter,
+    pagefooter,
   },
   data() {
     return {
