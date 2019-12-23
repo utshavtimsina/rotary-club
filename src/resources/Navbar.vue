@@ -1,7 +1,7 @@
 <template>
 <div>
       <v-card  raised     >
-          <v-toolbar >
+          <v-toolbar md12 >
           <v-spacer></v-spacer>
            <v-app-bar-nav-icon>
             <v-img 

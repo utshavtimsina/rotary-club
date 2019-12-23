@@ -1,10 +1,10 @@
 <template>
   <v-container>
     <v-layout row>
-      <v-flex xs1  md3>
+      <v-flex xs0 sm0 md2>
 
       </v-flex>
-      <v-flex  xs4 md2 class="mx-2">
+      <v-flex  xs5 sm5 md3 class="mx-2">
         <v-hover v-slot:default="{ hover }">
           <v-card :class="hover ? 'pa-0':'pa-2'" class="title transition-fast-in-fast-out" flat>
             <v-img
@@ -20,7 +20,7 @@
           </v-card>
         </v-hover>
       </v-flex>
-      <v-flex xs4   md2 class="mx-2">
+      <v-flex xs5 sm5  md3 class="mx-2">
         <v-hover v-slot:default="{ hover }">
           <v-card :class="hover ? 'pa-0':'pa-2'" class="title transition-fast-in-fast-out" flat>
             <v-img
@@ -36,7 +36,7 @@
           </v-card>
         </v-hover>
       </v-flex>
-      <v-flex xs4   md2 class="mx-2">
+      <v-flex  xs5 sm5  md3 class="mx-2">
         <v-hover v-slot:default="{ hover }">
           <v-card :class="hover ? 'pa-0':'pa-2'" class="title transition-fast-in-fast-out" flat>
             <v-img
@@ -52,8 +52,8 @@
           </v-card>
         </v-hover>
       </v-flex>
-     <v-flex xs0 md3> </v-flex>
-     <v-flex xs4  md2 class="mx-2">
+     <v-flex xs1 sm1 md2> </v-flex>
+     <v-flex   xs5 sm5  md3 class="mx-2">
         <v-hover v-slot:default="{ hover }">
           <v-card :class="hover ? 'pa-0':'pa-2'" class="title transition-fast-in-fast-out" flat>
             <v-img
@@ -69,7 +69,7 @@
           </v-card>
         </v-hover>
       </v-flex>
-      <v-flex  xs4  md2 class="mx-2">
+      <v-flex  xs5 sm5  md3 class="mx-2">
         <v-hover v-slot:default="{ hover }">
           <v-card :class="hover ? 'pa-0':'pa-2'" class="title transition-fast-in-fast-out" flat>
             <v-img
@@ -85,7 +85,7 @@
           </v-card>
         </v-hover>
       </v-flex>
-      <v-flex xs4  md2 class="mx-2">
+      <v-flex  xs5 sm5  md3 class="mx-2">
         <v-hover v-slot:default="{ hover }">
           <v-card :class="hover ? 'pa-0':'pa-2'" class="title transition-fast-in-fast-out" flat>
             <v-img
@@ -118,6 +118,6 @@ export default {
 
 <style>
 .center-bottom {
-  margin-top: 250px;
+  margin-top: 150%;
 }
 </style>

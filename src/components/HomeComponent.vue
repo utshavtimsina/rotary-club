@@ -5,36 +5,36 @@
        <v-layout row  >
          <v-spacer></v-spacer>
          <v-flex md2 class=" mx-9 my-9 transparent">
-            <div class="differences-person-1 " ></div>
+            <div class="differences-person-1 transparent" ></div>
          </v-flex>
          <v-spacer></v-spacer>
          <v-flex class=" mx-9 my-9 transparent" md1>
-            <div class="differences-person-2  "></div>
+            <div class="differences-person-2 transparent "></div>
          </v-flex>
          <v-flex md1 class=" mx-9 my-9 transparent">
-            <div class="differences-person-3 "></div>
+            <div class="differences-person-3 transparent"></div>
          </v-flex>
          <v-flex md1 class=" mx-9 my-9 transparent">
-            <div class="differences-person-4  "></div>
+            <div class="differences-person-4 transparent "></div>
             
          </v-flex>
          <v-spacer></v-spacer>
          <v-flex md1 flat class=" mx-9 my-9 transparent" >
-            <div class="differences-person-5  "></div>
+            <div class="differences-person-5 transparent "></div>
          </v-flex>
           <v-flex flat md2 class=" mx-9 my-9 transparent">
-            <div class="differences-person-6"></div>
+            <div class="differences-person-6 transparent"></div>
          </v-flex>
          <v-flex md1 class=" mx-9 my-9 transparent">
-            <div class="differences-person-7"></div>
+            <div class="differences-person-7 transparent"></div>
          </v-flex>
          <v-spacer></v-spacer>
          <v-flex md1 class=" mx-9 transparent">
-            <div class="differences-person-8"></div>
+            <div class="differences-person-8 transparent" ></div>
          </v-flex>
          <v-spacer></v-spacer>
          <v-flex md1 class=" mx-9 my-9 transparent">
-            <div class="differences-person-9"></div>
+            <div class="differences-person-9 transparent"></div>
          </v-flex>
        </v-layout>
        <v-layout row>
@@ -55,7 +55,7 @@
          </v-flex>
            <v-flex md4>
          
-             <img alt=""  data-src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/difference-transform-people.png" style="transform: translate3d(0px, 95.5px, 0px);" src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/difference-transform-people.png">
+             <img width="100%"  height="100%" data-src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/difference-transform-people.png" style="transform: translate3d(0px, 95.5px, 0px);" src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/difference-transform-people.png">
               
          </v-flex>
        </v-layout>

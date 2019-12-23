@@ -64,12 +64,140 @@
           </v-flex>
         </v-layout>
       </v-container>
-     
-    
         <HomeComponent/>
+     <p class="text-center display-2  pink--text accent-2">Our Causes</p>
         <hover/>
     </v-card>
-          <bodyfooter/>
+          
+      <v-card class="deep-purple "> <!-- for the purple div with Featured Stories-->
+          <v-layout row>
+            <v-flex xs0 md1>
+
+            </v-flex>
+            <v-flex xs11 md9>
+              <div class="py-8">
+                <p class=" text-center yellow--text darken-3 display-2 font-italic font-weight-bold">
+                  Featured Stories
+                </p>
+              </div>
+              <div >
+                <v-layout>
+                  <v-flex xs4 md4> 
+                      <v-hover v-slot:default="{ hover }">
+                         <v-card :class="hover ? 'pa-0':'pa-2'" class="title transition-fast-in-fast-out transparent" flat>
+                                <v-img 
+                                height="100%"
+                                width="100%"
+                                  src="https://www.rotary.org//sites/all/themes/rotary_rotaryorg/images/home/nakivale.jpg"
+                                >
+                                  <v-overlay :opacity="hover ? 0:0.3" :absolute="absolute" :value="overlay">
+                                     <v-flex
+                                       class="center-bottom title "
+                                    >Rotaractors Reshape Refugee Camp</v-flex>
+                                  </v-overlay>
+                                </v-img>
+                          </v-card>
+                        </v-hover>
+                  </v-flex>
+                       <v-flex xs4 md4> 
+                      <v-hover v-slot:default="{ hover }">
+                         <v-card :class="hover ? 'pa-0':'pa-2'" class="title transition-fast-in-fast-out transparent" flat>
+                                <v-img
+                                  src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/shelterbox.jpg"
+                                >
+                                  <v-overlay :opacity="hover ? 0:0.5" :absolute="absolute" :value="overlay">
+                                    <v-flex
+                                       class="center-bottom title "
+                                    >        What it takes to be ShelterBox volunteer
+                                    </v-flex>
+                                  </v-overlay>
+                                </v-img>
+                          </v-card>
+                        </v-hover>
+                  </v-flex>
+                       <v-flex xs4 md4> 
+                      <v-hover v-slot:default="{ hover }">
+                         <v-card :class="hover ? 'pa-0':'pa-2'" class="title transition-fast-in-fast-out transparent" flat>
+                                <v-img
+                                width="100%"
+                                  src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/feat-more.jpg"
+                                >
+                                  <v-overlay :opacity="hover ? 0:0.3" :absolute="absolute" :value="overlay">
+                                    <v-flex
+                                        class="center-bottom title "
+                                    >
+                                    <v-btn outlined> 
+                                      VIEW ALL STORIES
+                                    </v-btn>
+                                    </v-flex>
+                                  </v-overlay>
+                                </v-img>
+                          </v-card>
+                        </v-hover>
+                  </v-flex>
+                </v-layout>
+              </div>
+            </v-flex>
+            <v-flex md1>
+              
+            </v-flex>
+          </v-layout>
+        <v-card class="white"> <!-- inside purple card to make Join Leaders Component with no spacing -->
+          <section class="home-adspace">
+            <v-container class="my-9 ">
+              <v-layout row >
+                <v-flex md4 class="py-9">
+                  <h2 class="blue--text heading-3">Join Leaders</h2>
+
+                  <p class="my-9">
+                    Club activities, social events, and volunteer projects offer networking opportunities that build personal and professional connections. And Rotarians can extend those networks by visiting other clubs around the globe.
+                  </p>
+
+                  <p>
+                    <v-btn outlined class="blue--text pa-5" href="/en/get-involved/join">Learn More</v-btn>
+                  </p>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </section>
+              <v-card class="white">
+              <span class="home-cta-video-overlay">
+                <video style="z-index:-1;" width="100%" height="30%" autoplay="" loop="" muted="" >
+                  <source src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/media/home/AmbientWebDemo_Soccer_Kids_Running2.webm" type="video/webm">
+                    <source src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/media/home/AmbientWebDemo_Soccer_Kids_Running2.mp4" type="video/mp4">
+                  </video>
+                  <v-overlay
+                        absolute="absolute"
+                        :value="overlay"
+                        opacity="0.1"
+                        class="text-center black--text "
+                        z-index="3"
+                        > 
+                        <span class="display-1 white--text font-weight-light">Help us change lives locally and around the world</span>
+                            <div  >
+                             
+                              <v-btn depressed light class="pa-8 my-9 title">
+                                
+                                GET INVOLVED
+                              
+                              </v-btn>
+                               </div>
+                              <div>
+                              <v-btn depressed light  class="pa-8 title">
+                                DONATE
+                              </v-btn>
+                               </div>
+                              <div>
+                              <v-btn depressed light class="pa-8 my-9 title">
+                                Join
+                              </v-btn>
+                            </div>
+                    </v-overlay>
+              </span>
+        </v-card>
+        </v-card>
+       </v-card><!-- end of purple Div also includes Join Leaders Components -->
+       <bodyfooter/><!-- footer1 -->
           <pagefooter/>
   </div>
 </template>
@@ -98,11 +226,32 @@ export default {
 };
 </script>
 <style  scoped>
+.home-cta-video-overlay {
+    background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/cta-video-overlay.png) no-repeat 50% 50%;
+    height: 100%;
+    max-width: 50%;
+    left: 0;
+    z-index: 3;
+}
+.home-adspace {
+    background-image: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/ad-block-networkingmap--1000.png);
+    background-position: 107% 96%;
+    background-size: 69%;
+}
+.center-bottom {
+  margin-top: 70%;
+  text-align: center;
+}
 .map {
   background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/map.png);
 }
 .heros {
   color: aqua;
 }
+.transparent {
+   background-color: white!important;
+   opacity: 0.9;
+   border-color: transparent!important;
+ }
 
 </style>

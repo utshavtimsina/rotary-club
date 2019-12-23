@@ -1,14 +1,10 @@
 <template>
-<v-responsive aspect-ratio="16/9">
-       <v-component class="ma-10">
-         <v-layout >
-         <v-flex md1> 
-
+       <v-container class="my-10">
+         <v-layout row>
+         <v-flex xs7 sm7 md4>
+                <img height="100%" width="100%" src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/difference-solve-people.png" alt="">
          </v-flex>
-         <v-flex  md4>
-                <img  src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/difference-solve-people.png" alt="">
-         </v-flex>
-         <v-flex  md3>
+         <v-flex xs4 sm4 md3>
            <div style="width:60%">
 
            
@@ -27,7 +23,7 @@
            </v-img>
            </div>
          </v-flex>
-         <v-flex md4 class="ma-5" >
+         <v-flex sm11 xs11 md4 class="mx-5 my-5" >
              <v-card class="pa-8">
                 <h3 class="display-1">We Solve Problems</h3>
                  <hr class="light-yellow " >
@@ -39,8 +35,7 @@
              </v-card>
          </v-flex>
        </v-layout>
-       </v-component>
-    </v-responsive>
+       </v-container>
 </template>
 
 <script>
