@@ -1,5 +1,5 @@
 <template>
-<div>
+<div style="z-index:4;">
       <v-card  raised     >
           <v-toolbar md12 >
           <v-spacer></v-spacer>
@@ -49,10 +49,10 @@
                                     <div class="" style="display:inline-block;">
                                              <Span>
                                                 About Rotary
-                                                
+                                               
                                             </Span>
-                                            
-                                            <div  width="100%" class=" content">
+                                             
+                                            <div  class=" content ">
                                                 <v-list flat color ="grey lighten-4"
                                                 class="text-no-wrap">
                                                     <v-list-item>
@@ -115,8 +115,65 @@
                                                 </v-list>
                                             </div>
                                         </div>
-                                        <div class=""  style="display:inline-block;">
-                                             <Span>
+                                        <div class=" "  style="display:inline-block;">
+                                             <Span  class="ma-9">
+                                                About Rotary
+                                                
+                                            </Span>
+                                            
+                                            <div  class=" content ">
+                                                <v-list flat color ="grey lighten-4"
+                                                class="text-no-wrap ">
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Overview
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            History
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Our Structure
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Our Foundation
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Our Leaders
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Financials
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Partners
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Membership
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            Careers
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                </v-list>
+                                            </div>
+                                        </div>
+                                        <div class=" "  style="display:inline-block;">
+                                             <Span  class="ma-9">
                                                 About Rotary
                                                 
                                             </Span>
@@ -172,70 +229,13 @@
                                                 </v-list>
                                             </div>
                                         </div>
-                                        <div class=""  style="display:inline-block;">
-                                             <Span>
+                                       <div class=" "  style="display:inline-block;">
+                                             <Span  class="ma-9">
                                                 About Rotary
                                                 
                                             </Span>
                                             
-                                            <div  width="100%" class=" content ">
-                                                <v-list flat color ="grey lighten-4"
-                                                class="text-no-wrap ">
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Overview
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            History
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Our Structure
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Our Foundation
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Our Leaders
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Financials
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Partners
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Membership
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                    <v-list-item>
-                                                        <v-list-item-title>
-                                                            Careers
-                                                        </v-list-item-title>
-                                                    </v-list-item>
-                                                </v-list>
-                                            </div>
-                                        </div>
-                                       <div class=""  style="display:inline-block;">
-                                             <Span>
-                                                About Rotary
-                                                
-                                            </Span>
-                                            
-                                            <div  width="100%" class=" content ">
+                                            <div   class=" content ">
                                                 <v-list flat color ="grey lighten-4"
                                                 class="text-no-wrap ">
                                                     <v-list-item>
@@ -286,8 +286,8 @@
                                                 </v-list>
                                             </div>
                                        </div>
-                                        <div class=""  style="display:inline-block;">
-                                             <Span>
+                                        <div   style="display:inline-block;">
+                                             <Span class="ma-9"> 
                                                 About Rotary
                                                 
                                             </Span>
@@ -364,33 +364,30 @@ export default {
 a{
     text-decoration: none;
 }
-/* .content{
-    transition-property: width; 
-    transition: height 4s;
-     display: none;
-     
-} */
 /* .hover:hover .content{
     transition:height 400ms;
     height:500px;
     display :block;
 } */
-
+.content{
+    z-index: 1;
+    visibility: hidden;
+}
 .menu-card:not(hover){
-    transition:height 400ms;
+    transition:height 200ms;
     height:55px;
+    z-index: 1;
 }
 
-.menu-card:not(hover) .content{
-}
+
 
 .menu-card:hover{
-
     transition: height 400ms;
     height:500px;
 
 }
 .menu-card:hover .content {
-    display :block;
+    z-index: 1;
+    visibility: visible;
 }
 </style>

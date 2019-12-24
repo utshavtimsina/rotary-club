@@ -1,6 +1,7 @@
 <template>
-  <div class="overview">
+  <div class="overview" style="z-index:4;">
     <v-img
+    style="z-index:4;"
       src="https://www.rotary.org/sites/default/files/styles/w_2160/public/who%20overview%202.jpg?itok=sKHAn1ho"
     >
       <v-overlay
