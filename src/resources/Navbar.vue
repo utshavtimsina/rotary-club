@@ -46,7 +46,7 @@
                         <v-layout align-center="true" row class="pa-2">
                          
                          <v-flex>
-                                    <div class=" mx-9" style="display:inline-block;">
+                                    <div class="" style="display:inline-block;">
                                              <Span>
                                                 About Rotary
                                                 
@@ -115,7 +115,7 @@
                                                 </v-list>
                                             </div>
                                         </div>
-                                        <div class=" mx-9"  style="display:inline-block;">
+                                        <div class=""  style="display:inline-block;">
                                              <Span>
                                                 About Rotary
                                                 
@@ -172,7 +172,7 @@
                                                 </v-list>
                                             </div>
                                         </div>
-                                        <div class=" mx-9"  style="display:inline-block;">
+                                        <div class=""  style="display:inline-block;">
                                              <Span>
                                                 About Rotary
                                                 
@@ -229,7 +229,7 @@
                                                 </v-list>
                                             </div>
                                         </div>
-                                       <div class=" mx-9"  style="display:inline-block;">
+                                       <div class=""  style="display:inline-block;">
                                              <Span>
                                                 About Rotary
                                                 
@@ -286,7 +286,7 @@
                                                 </v-list>
                                             </div>
                                        </div>
-                                        <div class=" mx-9"  style="display:inline-block;">
+                                        <div class=""  style="display:inline-block;">
                                              <Span>
                                                 About Rotary
                                                 
@@ -381,7 +381,11 @@ a{
     height:55px;
 }
 
+.menu-card:not(hover) .content{
+}
+
 .menu-card:hover{
+
     transition: height 400ms;
     height:500px;
 
