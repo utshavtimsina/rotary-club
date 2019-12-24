@@ -40,23 +40,21 @@
                 <v-spacer></v-spacer>
             </v-toolbar>
             <hr>
-            <v-card class="" color="grey lighten-4">
+            <v-card class="menu-card" color="grey lighten-4">
             
-                    <v-container class="hover" color="#5e717d">
-                        <v-layout align-center="true" row class="pa-2 ">
-                            <v-flex xs0 sm0 md2>
-
-                            </v-flex>
-                         <v-flex xs0 sm0 md10 >
+                        <v-container class="hover text-center">
+                        <v-layout align-center="true" row class="pa-2">
+                         
+                         <v-flex>
                                     <div class=" mx-9" style="display:inline-block;">
                                              <Span>
                                                 About Rotary
                                                 
                                             </Span>
                                             
-                                            <div  width="100%" class=" content ">
+                                            <div  width="100%" class=" content">
                                                 <v-list flat color ="grey lighten-4"
-                                                class="text-no-wrap ">
+                                                class="text-no-wrap">
                                                     <v-list-item>
                                                         <v-list-item-title  >
                                                             <router-link to="/overview">
@@ -366,13 +364,29 @@ export default {
 a{
     text-decoration: none;
 }
-.content{
-    transition-property: width;
-    transition-delay: 1s;
-    display: none;
+/* .content{
+    transition-property: width; 
+    transition: height 4s;
+     display: none;
      
+} */
+/* .hover:hover .content{
+    transition:height 400ms;
+    height:500px;
+    display :block;
+} */
+
+.menu-card:not(hover){
+    transition:height 400ms;
+    height:55px;
 }
-.hover:hover .content{
+
+.menu-card:hover{
+    transition: height 400ms;
+    height:500px;
+
+}
+.menu-card:hover .content {
     display :block;
 }
 </style>
