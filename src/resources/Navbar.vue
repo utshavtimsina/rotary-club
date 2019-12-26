@@ -110,7 +110,17 @@
                                                     <v-list-item>
                                                         <v-list-item-title>
                                                             <router-link to="/rotary-foundation">
-                                                            Our Foundation
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                 Our Foundation
+                                                                </v-btn>
+                                                                </v-hover>
                                                             </router-link> 
                                                         </v-list-item-title>
                                                     </v-list-item>
