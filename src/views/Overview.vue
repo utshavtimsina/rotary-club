@@ -1,7 +1,6 @@
 <template>
-  <div class="overview" style="z-index:4;">
+  <div class="overview" style="">
     <v-img
-    style="z-index:4;"
       src="https://www.rotary.org/sites/default/files/styles/w_2160/public/who%20overview%202.jpg?itok=sKHAn1ho"
     >
       <v-overlay
@@ -16,19 +15,17 @@
       </h1>
       </v-overlay>
     </v-img>
+  <div style="margin:5% 20%;">
     <v-container >
-       <div class="ma-9">
-          <div class="ma-9">
-             <div class="ma-9">
       <v-card class="pa-5 font-weight-light " flat>
         <h1 class="font-weight-light my-6">
         Rotary is a global network of 1.2 million neighbors, friends, leaders, and problem-solvers who see a world where people unite and take action to create lasting change – across the globe, in our communities, and in ourselves.
         </h1>
-        <p class="my-5">Solving real problems takes real commitment and vision. For more than 110 years, Rotary's people of action have used their passion, energy, and intelligence to take action on sustainable projects. From literacy and peace to water and health, we are always working to better our world, and we stay committed to the end.</p>
-        <p>Learn more about <a href="/en/about-rotary/our-structure">our structure</a> and <a href="/en/about-rotary/rotary-foundation">our foundation</a> and <a href="https://my.rotary.org/en/learning-reference/about-rotary/strategic-plan">our strategic vision</a>.</p>
-        <h2 class="my-5">What we do</h2>
-        <p>Rotary members believe that we have a shared responsibility to take action on our world’s most persistent issues. Our 35,000+ clubs work together to:</p>
-        <ul class="my-5">
+        <p class="pa-3 title font-weight-light">Solving real problems takes real commitment and vision. For more than 110 years, Rotary's people of action have used their passion, energy, and intelligence to take action on sustainable projects. From literacy and peace to water and health, we are always working to better our world, and we stay committed to the end.</p>
+        <p class="pa-3 title font-weight-light"> Learn more about <a href="/en/about-rotary/our-structure">our structure</a> and <a href="/en/about-rotary/rotary-foundation">our foundation</a> and <a href="https://my.rotary.org/en/learning-reference/about-rotary/strategic-plan">our strategic vision</a>.</p>
+        <h2 class="pa-3 title font-weight-light">What we do</h2>
+        <p class="pa-3 title font-weight-light">Rotary members believe that we have a shared responsibility to take action on our world’s most persistent issues. Our 35,000+ clubs work together to:</p>
+        <ul class="pa-3 title font-weight-light">
           <li>Promote peace</li>
           <li>Fight disease</li>
           <li>Provide clean water, sanitation, and hygiene</li>
@@ -38,13 +35,13 @@
         </ul>
         <p><a href="/en/get-involved">Get involved</a></p>
         <h2 class="my-5">Our mission</h2>
-        <p>We provide service to others, promote integrity, and advance world understanding, goodwill, and peace through our fellowship of business, professional, and community leaders.</p>
+        <p class="pa-3 title font-weight-light">We provide service to others, promote integrity, and advance world understanding, goodwill, and peace through our fellowship of business, professional, and community leaders.</p>
       </v-card>
-          </div>
-           </div>
-      </div>
     </v-container>
-    <div class="corousal my-9"> 
+  </div>
+  
+    <div class="corousal "> 
+      <div style="margin:5% 15%;padding:2% 0%;">
       <v-layout align-center="true">
         <v-flex md3>
 
@@ -61,12 +58,13 @@
             >
              <v-sheet
               height="22%"
-              class="d-flex align-self-auto "
+               width="100%"
+              class="text-center"
               style="position:absolute; bottom:0%;"
               
             >
               
-                <div class=" pa-2 heading-1 red mx-4">{{item.header}}</div>
+               <div class=" heading-1 red " style="margin:0% 20%;padding:2% 0%;">{{item.header}}</div>
                 <span>
                  {{item.text}}
                 </span>
@@ -75,30 +73,27 @@
           </v-carousel>
         </v-flex>
       </v-layout>
-          
+      </div>
     </div>
-    <v-container > 
-      <div class="ma-9">
-          <div class="ma-9">
-             <div class="ma-9">
-              <h2 class="heading-2 my-5">We work differently</h2>
-              <p class="my-5">We see differently: Our multidisciplinary perspective helps us see challenges in unique ways.</p>
-              <p class="my-5">We think differently: We apply leadership and expertise to social issues — and find unique solutions.</p>
-              <p class="my-5">We act responsibly: Our passion and perseverance create lasting change.</p>
-              <p class="my-5">We make a difference at home and around the world: Our members can be found in your community and across the globe.</p>
+    <div style="margin:5% 20%;">
+      <v-container > 
+              <h1 class="heading-2 my-5">We work differently</h1>
+              <p class="pa-3 title font-weight-light">We see differently: Our multidisciplinary perspective helps us see challenges in unique ways.</p>
+              <p class="pa-3 title font-weight-light">We think differently: We apply leadership and expertise to social issues — and find unique solutions.</p>
+              <p class="pa-3 title font-weight-light">We act responsibly: Our passion and perseverance create lasting change.</p>
+              <p class="pa-3 title font-weight-light">We make a difference at home and around the world: Our members can be found in your community and across the globe.</p>
               <p class="text-center">
-              <v-btn outlined class="pink pa-4 white--text mx-8">
+              <v-btn outlined class="pink white--text my-9" style="padding:3% 15%;">
                   Get involved
 
               </v-btn></p>
               
-              <h2 class="heading-2">Diversity, Equity, and Inclusion</h2>
-              <p class="my-5">As a global network that strives to build a world where people unite and take action to create lasting change, Rotary values diversity and celebrates the contributions of people of all backgrounds, regardless of their age, ethnicity, race, color, abilities, religion, socioeconomic status, culture, sex, sexual orientation, and gender identity.</p>
-              <p class="my-5">Learn more about <a href="/en/about-rotary/diversity-equity-and-inclusion">Diversity, Equity, and Inclusion</a>.</p>
-              </div>
-           </div>
-      </div>
-    </v-container>
+              <h1 class="heading-2 my-7">Diversity, Equity, and Inclusion</h1>
+              <p class="pa-3 title font-weight-light">As a global network that strives to build a world where people unite and take action to create lasting change, Rotary values diversity and celebrates the contributions of people of all backgrounds, regardless of their age, ethnicity, race, color, abilities, religion, socioeconomic status, culture, sex, sexual orientation, and gender identity.</p>
+              <p class="pa-3 title font-weight-light">Learn more about <a href="/en/about-rotary/diversity-equity-and-inclusion">Diversity, Equity, and Inclusion</a>.</p>
+        
+      </v-container>
+    </div>
    <bodyfooter/>
     <pagefooter/>
     
@@ -123,7 +118,7 @@ export default {
           text:"We collaborate with community leaders who want to get to work on projects that have a real, lasting impact on people’s lives."
         },
         {
-          src:" https://www.rotabodyfooterry.org/sites/default/files/styles/w_700/public/Overview%20peep%20of%20action%20700x700.jpg?itok=rWjbSfMJ 700w",
+          src:"https://www.rotary.org/sites/default/files/styles/w_700/public/Overview%20peep%20of%20action%20700x700.jpg?itok=rWjbSfMJ 700w",
           header:"WE ARE PEOPLE OF ACTION",
           text:"We connect passionate people with diverse perspectives to exchange ideas, forge lifelong friendships, and, above all, take action to change the world."
         }

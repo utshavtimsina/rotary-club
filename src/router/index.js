@@ -18,9 +18,27 @@ const routes = [
     component:()=> import ('../views/History.vue'),
   },
   {
-    path:'/OurFoundation',
+    path:'/rotary-foundation',
     component:()=> import ('../views/rotary-foundation.vue'),
-  }
+  },
+  {
+    path:'/our-structure',
+    component:()=> import ('../views/Our-Structure.vue'),
+  },
+  {
+    path:'/our-leaders',
+    component:()=> import ('../views/Our-Leaders.vue'),
+  },
+  {
+    path:'/diversity-equity-and-inclusion',
+    component:()=> import ('../views/Diversity-Equity-And-Inclusion.vue'),
+  },
+  {
+    path:'/financials',
+    component:()=> import ('../views/Financials.vue'),
+  },
+  
+  
   
 ]
 

@@ -1,5 +1,5 @@
 <template>
-<div style="z-index:4;">
+<div class="navbar">
       <v-card  raised     >
           <v-toolbar md12 >
           <v-spacer></v-spacer>
@@ -40,26 +40,25 @@
                 <v-spacer></v-spacer>
             </v-toolbar>
             <hr>
-            <v-card class="menu-card" color="grey lighten-4">
+            <v-card  class="menu-card caption px-9 py-2" color="grey  lighten-4">
             
-                        <v-container class="hover text-center">
-                        <v-layout align-center="true" row class="pa-2">
+                        <v-container class="hover ">
+                        <v-layout row >
                          
-                         <v-flex>
-                                    <div class="" style="display:inline-block;">
-                                             <Span>
+                         <v-flex >
+                                    <div class=" " style="display:inline-block;">
+                                             <Span >
                                                 About Rotary
-                                               
                                             </Span>
                                              
-                                            <div  class=" content headline ">
+                                            <div  class="content caption ">
                                                 <v-list flat color ="grey lighten-4"
-                                                class="text-no-wrap">
+                                                class=" caption">
                                                     <v-list-item>
                                                         <v-list-item-title  >
                                                             <router-link to="/overview">
                                                                 <v-hover v-slot:default="{ hover }">
-                                                                    <v-btn   depressed flat >
+                                                                    <v-btn   depressed flat class="caption">
                                                                         <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
                                                                             mdi-arrow-right-drop-circle-outline
                                                                         </v-icon>
@@ -74,12 +73,38 @@
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            History
+                                                               <router-link to="/history">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                   History
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            Our Structure
+                                                            <router-link to="/our-structure">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn class="caption"  depressed flat >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                  Our Structure
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
@@ -91,254 +116,695 @@
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            Our Leaders
+                                                             <router-link to="/our-leaders">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                 Our Leaders
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                     <v-list-item>
+                                                        <v-list-item-title>
+                                                             <router-link to="/diversity-equity-and-inclusion">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat class="caption" >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                Diversity, Equity, and Inclusion
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
-                                                            Financials
+                                                        <v-list-item-title class="caption">
+                                                             <router-link to="/financials">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                  Financials
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Partners
-                                                        </v-list-item-title>
+                                                        </v-list-item-title >
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Membership
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Careers
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                 </v-list>
                                             </div>
                                         </div>
-                                        <div class=" "  style="display:inline-block;">
-                                             <Span  class="ma-9">
+                                        <div class=" " style="display:inline-block;">
+                                             <Span >
                                                 About Rotary
-                                                
                                             </Span>
-                                            
-                                            <div  class=" content ">
+                                             
+                                            <div  class="content caption ">
                                                 <v-list flat color ="grey lighten-4"
-                                                class="text-no-wrap ">
+                                                class=" caption">
                                                     <v-list-item>
-                                                        <v-list-item-title>
-                                                            Overview
+                                                        <v-list-item-title  >
+                                                            <router-link to="/overview">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                    Overview
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            History
+                                                               <router-link to="/history">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                   History
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            Our Structure
+                                                            <router-link to="/our-structure">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn class="caption"  depressed flat >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                  Our Structure
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Our Foundation
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            Our Leaders
+                                                             <router-link to="/our-leaders">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                 Our Leaders
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                     <v-list-item>
+                                                        <v-list-item-title>
+                                                             <router-link to="/diversity-equity-and-inclusion">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat class="caption" >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                Diversity, Equity, and Inclusion
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Financials
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Partners
-                                                        </v-list-item-title>
+                                                        </v-list-item-title >
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Membership
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Careers
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                 </v-list>
                                             </div>
                                         </div>
-                                        <div class=" "  style="display:inline-block;">
-                                             <Span  class="ma-9">
+                                        <div class=" " style="display:inline-block;">
+                                             <Span >
                                                 About Rotary
-                                                
                                             </Span>
-                                            
-                                            <div  width="100%" class=" content ">
+                                             
+                                            <div  class="content caption ">
                                                 <v-list flat color ="grey lighten-4"
-                                                class="text-no-wrap ">
+                                                class=" caption">
                                                     <v-list-item>
-                                                        <v-list-item-title>
-                                                            Overview
+                                                        <v-list-item-title  >
+                                                            <router-link to="/overview">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                    Overview
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            History
+                                                               <router-link to="/history">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                   History
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            Our Structure
+                                                            <router-link to="/our-structure">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn class="caption"  depressed flat >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                  Our Structure
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Our Foundation
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            Our Leaders
+                                                             <router-link to="/our-leaders">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                 Our Leaders
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                     <v-list-item>
+                                                        <v-list-item-title>
+                                                             <router-link to="/diversity-equity-and-inclusion">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat class="caption" >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                Diversity, Equity, and Inclusion
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Financials
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Partners
-                                                        </v-list-item-title>
+                                                        </v-list-item-title >
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Membership
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Careers
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                 </v-list>
                                             </div>
                                         </div>
-                                       <div class=" "  style="display:inline-block;">
-                                             <Span  class="ma-9">
+                                        <div class=" " style="display:inline-block;">
+                                             <Span >
                                                 About Rotary
-                                                
                                             </Span>
-                                            
-                                            <div   class=" content ">
+                                             
+                                            <div  class="content caption ">
                                                 <v-list flat color ="grey lighten-4"
-                                                class="text-no-wrap ">
+                                                class=" caption">
                                                     <v-list-item>
-                                                        <v-list-item-title>
-                                                            Overview
+                                                        <v-list-item-title  >
+                                                            <router-link to="/overview">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                    Overview
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            History
+                                                               <router-link to="/history">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                   History
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            Our Structure
+                                                            <router-link to="/our-structure">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn class="caption"  depressed flat >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                  Our Structure
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Our Foundation
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            Our Leaders
+                                                             <router-link to="/our-leaders">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                 Our Leaders
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                     <v-list-item>
+                                                        <v-list-item-title>
+                                                             <router-link to="/diversity-equity-and-inclusion">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat class="caption" >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                Diversity, Equity, and Inclusion
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Financials
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Partners
-                                                        </v-list-item-title>
+                                                        </v-list-item-title >
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Membership
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Careers
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                 </v-list>
                                             </div>
-                                       </div>
-                                        <div   style="display:inline-block;">
-                                             <Span class="ma-9"> 
+                                        </div>
+                                        <div class=" " style="display:inline-block;">
+                                             <Span >
                                                 About Rotary
-                                                
                                             </Span>
-                                            
-                                            <div  width="100%" class=" content ">
+                                             
+                                            <div  class="content caption ">
                                                 <v-list flat color ="grey lighten-4"
-                                                class="text-no-wrap ">
+                                                class=" caption">
                                                     <v-list-item>
-                                                        <v-list-item-title>
-                                                            Overview
+                                                        <v-list-item-title  >
+                                                            <router-link to="/overview">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                    Overview
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            History
+                                                               <router-link to="/history">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                   History
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            Our Structure
+                                                            <router-link to="/our-structure">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn class="caption"  depressed flat >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                  Our Structure
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Our Foundation
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
-                                                            Our Leaders
+                                                             <router-link to="/our-leaders">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                 Our Leaders
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                     <v-list-item>
+                                                        <v-list-item-title>
+                                                             <router-link to="/diversity-equity-and-inclusion">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat class="caption" >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                Diversity, Equity, and Inclusion
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Financials
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Partners
-                                                        </v-list-item-title>
+                                                        </v-list-item-title >
                                                     </v-list-item>
                                                     <v-list-item>
-                                                        <v-list-item-title>
+                                                        <v-list-item-title class="caption">
                                                             Membership
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
+                                                        <v-list-item-title class="caption">
+                                                            Careers
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                </v-list>
+                                            </div>
+                                        </div>
+                                        <div class=" " style="display:inline-block;">
+                                             <Span >
+                                                About Rotary
+                                            </Span>
+                                             
+                                            <div  class="content caption ">
+                                                <v-list flat color ="grey lighten-4"
+                                                class=" caption">
+                                                    <v-list-item>
+                                                        <v-list-item-title  >
+                                                            <router-link to="/overview">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                    Overview
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
                                                         <v-list-item-title>
+                                                               <router-link to="/history">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                   History
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                            <router-link to="/our-structure">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn class="caption"  depressed flat >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                  Our Structure
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title class="caption">
+                                                            Our Foundation
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title>
+                                                             <router-link to="/our-leaders">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat  class="caption">
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                 Our Leaders
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                     <v-list-item>
+                                                        <v-list-item-title>
+                                                             <router-link to="/diversity-equity-and-inclusion">
+                                                                <v-hover v-slot:default="{ hover }">
+                                                                    <v-btn   depressed flat class="caption" >
+                                                                        <v-icon v-if="hover" class="title transition-fast-in-fast-out"> 
+                                                                            mdi-arrow-right-drop-circle-outline
+                                                                        </v-icon>
+                                                                        <v-icon  class="title white--text " v-else >
+                                                                          mdi-check-circle-outline
+                                                                        </v-icon>
+                                                                Diversity, Equity, and Inclusion
+                                                                </v-btn>
+                                                                </v-hover>
+                                                            </router-link>
+                                                            
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title class="caption">
+                                                            Financials
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title class="caption">
+                                                            Partners
+                                                        </v-list-item-title >
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title class="caption">
+                                                            Membership
+                                                        </v-list-item-title>
+                                                    </v-list-item>
+                                                    <v-list-item>
+                                                        <v-list-item-title class="caption">
                                                             Careers
                                                         </v-list-item-title>
                                                     </v-list-item>
@@ -357,8 +823,11 @@
 </template>
 
 <script>
+import ResizeText from 'vue-resize-text'
 export default {
-
+    directives: {
+        ResizeText
+ },
 }
 </script>
 
@@ -371,27 +840,32 @@ a{
     height:500px;
     display :block;
 } */
+.navbar{
+     z-index: 4;
+}
 .content{
-    z-index: 1;
-    visibility: hidden;
+    opacity: 0;
 }
 .menu-card:not(hover){
     transition:height 200ms;
     height:55px;
-    z-index: 1;
-    position:absolute;
-    width:100%;
+    overflow: hidden;
+    z-index: 4;
+    position: absolute;
+    width: 100%;
 }
 
 
 
 .menu-card:hover{
-    transition: height 400ms;
-    height:500px;
+    transition: height 400ms linear;
+    height:530px;
 
 }
 .menu-card:hover .content {
-    z-index: 1;
-    visibility: visible;
+     transition: opacity 800ms ease-in;
+    /* /z-index: 1; */
+   
+    opacity: 1;
 }
 </style>

@@ -5,7 +5,7 @@
         <h1 class="display-3">Our History</h1>
       </v-overlay>
     </span>
-    <v-card class="others" flat>
+    <v-card style="z-index:1;" class="others" flat>
       <v-container>
         <div style="margin-left:20%; margin-right:20% " class="pa-9">
           <p
@@ -162,7 +162,7 @@ export default {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 3;
+  z-index: initial;
   top: -12%;
   background-position: center;
   background-repeat: no-repeat;
