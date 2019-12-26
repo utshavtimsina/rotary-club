@@ -52,7 +52,7 @@
                                                
                                             </Span>
                                              
-                                            <div  class=" content ">
+                                            <div  class=" content headline ">
                                                 <v-list flat color ="grey lighten-4"
                                                 class="text-no-wrap">
                                                     <v-list-item>
@@ -84,7 +84,9 @@
                                                     </v-list-item>
                                                     <v-list-item>
                                                         <v-list-item-title>
+                                                            <router-link to="/rotary-foundation">
                                                             Our Foundation
+                                                            </router-link> 
                                                         </v-list-item-title>
                                                     </v-list-item>
                                                     <v-list-item>
@@ -377,6 +379,8 @@ a{
     transition:height 200ms;
     height:55px;
     z-index: 1;
+    position:absolute;
+    width:100%;
 }
 
 

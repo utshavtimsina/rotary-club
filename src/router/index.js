@@ -16,6 +16,10 @@ const routes = [
   {
     path:'/history',
     component:()=> import ('../views/History.vue'),
+  },
+  {
+    path:'/OurFoundation',
+    component:()=> import ('../views/rotary-foundation.vue'),
   }
   
 ]
