@@ -1,5 +1,5 @@
 # rotary
-live demo at https://www.rotarynp.herokuapp.com
+live demo at https://rotarynp.herokuapp.com/#/
 ## Project setup
 ```
 npm install
