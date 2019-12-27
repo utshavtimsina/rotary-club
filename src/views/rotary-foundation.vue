@@ -191,7 +191,7 @@
         <v-layout row>
           <v-flex md5>
             <p class="title">EVERY ROTARIAN EVERY YEAR BROCHURES</p>
-            <v-img
+            <v-img height="154px" width="272px"
               src="https://www.rotary.org/sites/default/files/styles/w_600/public/every.jpg?itok=KEq6yYdN 600w"
             ></v-img>
           </v-flex>
