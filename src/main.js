@@ -2,10 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify';
-import VueResizeText from 'vue-resize-text';
-import VueGraph from 'vue-graph';
-Vue.use(VueResizeText)
-Vue.use(VueGraph)
+
 Vue.config.productionTip = false
 
 new Vue({
