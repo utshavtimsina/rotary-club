@@ -43,72 +43,111 @@
         </div>
       </div>
       <div class="next-div pa-12">
-          <p class="title font-weight-bold">
-                HOW THE FOUNDATION MAKES HELP HAPPEN
-              </p>
-                 <v-flex md4 class="mx-auto">
-                  <v-carousel hide-delimiters>
-                      <v-carousel-item
-                        v-for="(item,i) in items"
-                        :key="i"
-                        :src="item.src"
-                      >
-                    <v-sheet
-                    :color="item.color"
-                    style="position:absolute;bottom:0;width:100%"
-                    >
-                    <div>
-                    {{item.ribbon}}
-                    </div>
-                    <div class="white black--text pa-8">
-                        {{item.content}}
-                    </div>
-                    <div class="white pb-4">
-                      <a href="#" class="text--left">{{item.link}}</a>
-                      </div>
-                    </v-sheet>
-                      </v-carousel-item>
-                      </v-carousel>
-                
-              
-              </v-flex>
+        <p class="title font-weight-bold">HOW THE FOUNDATION MAKES HELP HAPPEN</p>
+        <v-flex md4 class="mx-auto">
+          <v-carousel hide-delimiters>
+            <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src">
+              <v-sheet
+                class="text-left"
+                :color="item.color"
+                style="position:absolute;bottom:0;width:100%"
+              >
+                <div class="pa-2 text-center">{{item.ribbon}}</div>
+                <div class="white black--text pa-4">{{item.content}}</div>
+                <div class="white pb-4 pl-4">
+                  <a href="#">{{item.link}}</a>
+                </div>
+              </v-sheet>
+            </v-carousel-item>
+          </v-carousel>
+        </v-flex>
+        <div class="mt-12">
+          <div
+            class="infogram-embed"
+            data-id="4453c8b1-b1ba-4ba0-b324-bd02ee9dbb41"
+            data-type="interactive"
+            data-title="Rotary Foundation grants"
+          ></div>
+  
+        </div>
       </div>
     </v-card>
   </div>
 </template>
 
 <script>
-export default {
-    data(){
-        return{
-            items:[
-                {
-                src:"https://www.rotary.org/sites/default/files/styles/w_350/public/causes-economies-carousel-power-of-light.jpg?itok=V8_JB0K2 350w",
-                ribbon:"THE POWER OF LIGHT",
-                color:"#019FCB",
-                content:"A grant helped a club in Durango, Colorado, USA, install more than 200 solar lights in remote, off-the-grid Navajo homes.",
-                link:"READ MORE",
-            },
-            {
-                src:"https://www.rotary.org/sites/default/files/styles/w_350/public/foundation-carousel-germany.jpg?itok=6oF2DMb0 350w",
-                ribbon:"HEALING THOUSANDS",
-                color:"#018D8D",
-                content:"Rotarian and physician Pia Skarabis-Querfeld has spent years building a network of volunteer doctors to help refugees in Berlin, Germany.",
-                link:"READ MORE",
-            },
-            {
-                src:"https://www.rotary.org/sites/default/files/styles/w_350/public/foundation-carousel-puerto-rico.jpg?itok=HXyzYqyr 350w",
-                ribbon:"REBUILDING LIVES",
-                color:"#9B1238",
-                content:"Rotary clubs worked together to help Puerto Ricans rebuild their homes and hearts after Hurricane Maria.",
-                link:"READ MORE",
-            }
-            ],         
-        }
-
+!(function(e, i, n) {
+    var t = "InfogramEmbeds",
+      d = e.getElementsByTagName("script")[0];
+    if (window[t] && window[t].initialized)
+      window[t].process && window[t].process();
+    else if (!e.getElementById(n)) {
+      var o = e.createElement("script");
+      (o.async = 1),
+        (o.id = n),
+        (o.src = "https://e.infogram.com/js/dist/embed-loader-min.js"),
+        d.parentNode.insertBefore(o, d);
     }
+  })(document, 0, "infogram-async");
+// import GraphLine3D from 'vue-graph/src/components/line3d.js'
+// import NoteWidget from 'vue-graph/src/widgets/note.js'
+// import LegendWidget from 'vue-graph/src/widgets/legends.js'
+export default {
+  // components:{
+  //   GraphLine3D,
+  //   NoteWidget,
+  //   LegendWidget,
+  // },
+  data() {
+    return {
+      names: [
+        "Preventing disease",
+        "Providing clean water",
+        "Supporting education",
+        "Growing local economies",
+        "Saving mothers & children",
+        "Promoting peace"
+      ],
+      values: [
+        [35660986],
+        [18761791],
+        [10998136],
+        [10503910],
+        [7204677],
+        [3547899]
+      ],
+      items: [
+        {
+          src:
+            "https://www.rotary.org/sites/default/files/styles/w_700/public/causes-economies-carousel-power-of-light.jpg?itok=V8_JB0K2 700w",
+          ribbon: "THE POWER OF LIGHT",
+          color: "#019FCB",
+          content:
+            "A grant helped a club in Durango, Colorado, USA, install more than 200 solar lights in remote, off-the-grid Navajo homes.",
+          link: "READ MORE"
+        },
+        {
+          src:
+            "https://www.rotary.org/sites/default/files/styles/w_700/public/foundation-carousel-germany.jpg?itok=6oF2DMb0 700w",
+          ribbon: "HEALING THOUSANDS",
+          color: "#018D8D",
+          content:
+            "Rotarian and physician Pia Skarabis-Querfeld has spent years building a network of volunteer doctors to help refugees in Berlin, Germany.",
+          link: "READ MORE"
+        },
+        {
+          src:
+            "https://www.rotary.org/sites/default/files/styles/w_700/public/foundation-carousel-puerto-rico.jpg?itok=HXyzYqyr 700w",
+          ribbon: "REBUILDING LIVES",
+          color: "#9B1238",
+          content:
+            "Rotary clubs worked together to help Puerto Ricans rebuild their homes and hearts after Hurricane Maria.",
+          link: "READ MORE"
+        }
+      ]
+    };
+  }
 };
-
 </script>
 <style>
 .background-img {
@@ -132,7 +171,9 @@ export default {
 }
 .next-div {
   background: url("https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/concrete_seamless.jpg");
-    
 }
-
+.infogram-embed{
+  display:inline-block;
+  width:50%;
+}
 </style>
