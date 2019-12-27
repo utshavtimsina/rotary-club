@@ -37,6 +37,10 @@ const routes = [
     path:'/financials',
     component:()=> import ('../views/Financials.vue'),
   },
+  {
+    path:'/partnerships',
+    component:()=> import ('../views/Partnerships.vue'),
+  },
   
   
   
