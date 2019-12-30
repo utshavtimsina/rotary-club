@@ -91,31 +91,35 @@
         ></v-img>
       </div>
       <!-- image and red image component -->
-      <v-card class="white--text ma-12 pa-12" flat>
+      <v-card 
+      class="white--text" 
+      style="margin:4% 15% 0% 15%" 
+      flat 
+      >
         <v-layout row>
           <v-flex md6>
-            <div>
               <v-img
                 height="100%"
                 src="https://www.rotary.org/sites/default/files/styles/w_600/public/backup%20callout.jpg?itok=KS1buGno"
               ></v-img>
-            </div>
           </v-flex>
           <v-flex
             md6
             class="pa-12"
             style="background:url('https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/geo-red.png')"
           >
-            <p class="headline text-left pl-12">Foundation History</p>
-            <div style="width:500px;height:100%" class="mx-auto pl-12 pr-12">
-              <p class="subtitle text-left">
+            <div 
+            class="mx-auto"
+            >
+              <p class="headline text-left mx-auto">Foundation History</p>
+              <p class="subtitle text-left my-8">
                 At the 1917 convention, outgoing Rotary president Arch Klumph proposed setting up an endowment
                 “for the purpose of doing good in the world.” That one idea, and an initial contribution of $26.50,
                 set in motion a powerful force that has transformed millions of lives around the globe.
               </p>
 
               <v-btn
-                width="400"
+                width="100%"
                 height="50"
                 tile
                 outlined

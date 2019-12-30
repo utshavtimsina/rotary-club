@@ -9,7 +9,6 @@
 
 <script>
 import Navbar from "@/resources/Navbar.vue"
-
 export default {
   name: 'App',
 

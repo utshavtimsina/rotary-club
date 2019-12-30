@@ -1,5 +1,6 @@
 <template>
-  <v-card class="grey-lighten-5 mt-12" flat>
+
+    <v-card class="grey-lighten-5 mt-12" flat>
     <v-layout row align-center="true">
       <v-flex class="ml-3">
         <div class="text-center">
@@ -30,6 +31,7 @@
       </v-flex>
     </v-layout>
   </v-card>
+
 </template>
 
 <script>
