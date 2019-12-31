@@ -73,7 +73,17 @@ const routes = [
     
     path:'/get-involved/rotaract-clubs',
     component:()=> import ('../views/get-involved/rotaract-clubs.vue'),
+   
+  },
+  {
+    path:'/our-cause/overview',
+    component:()=> import ('../views/our-cause/Overview'),
+  },
+  {
+    path:'/our-cause/ending-polio',
+    component:()=> import ('../views/our-cause/Ending-Polio'),
   }
+  
   
   
   
