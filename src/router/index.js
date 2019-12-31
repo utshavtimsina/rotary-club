@@ -41,7 +41,10 @@ const routes = [
     path:'/partnerships',
     component:()=> import ('../views/Partnerships.vue'),
   },
-
+  {
+    path:'/membership',
+    component:()=> import ('../views/Membership.vue'),
+  },
   {
     path:'/careers',
     component:()=> import ('../views/careers.vue'),
@@ -54,6 +57,8 @@ const routes = [
     path:'/projects',
     component:()=> import ('../views/projects.vue'),
   }
+  
+  
   
   
 ]

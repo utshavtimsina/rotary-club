@@ -17,36 +17,30 @@
       </div>
    <div class="corousal "> 
       <div style="margin:5% 15%;padding:2% 0%;">
-      <v-layout align-center="true">
-        <v-flex md3>
+      <v-layout >
+        <v-flex >
 
         </v-flex>
         <v-flex md6>
-           <v-carousel hide-delimiters>
+           <v-carousel hide-delimiters width="40%" height="100%">
             <v-carousel-item
               v-for="(item,i) in items"
               :key="i"
-              :src="item.src"
-              reverse-transition="slide-x-reverse-transition"
-              transition="slide-x-transition" 
-              style="position:relative;"
             >
              <v-sheet
-              height="22%"
               width="100%"
-              class="text-center"
-              style="position:absolute; bottom:0%;"
-              
+              height="100%"
             >
-              
-                <div class=" heading-1 red " style="margin:0% 20%;padding:2% 0%;">{{item.header}}</div>
-                <span>
+             <img width="100%" :src="item.src" alt="">
+                <div class=" heading-1 red text-center " style="padding:2% 0%;">{{item.header}}</div>
+                <div style="padding:2% 7%;">
                  {{item.text}}
-                </span>
+                </div>
             </v-sheet>
             </v-carousel-item>
           </v-carousel>
         </v-flex>
+        <v-flex></v-flex>
       </v-layout>
       </div>
     </div>
