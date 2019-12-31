@@ -49,6 +49,10 @@ const routes = [
   {
     path:'/join',
     component:()=> import ('../views/join.vue'),
+  },
+  {
+    path:'/projects',
+    component:()=> import ('../views/projects.vue'),
   }
   
   
