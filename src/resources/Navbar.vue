@@ -336,8 +336,136 @@
                     </v-list-item-title>
                   </v-list-item>
                 </v-list>
-              </div>
+              </div><!-- next navbar item -->
             </div>
+             <div  style="display:inline-block;">
+              <Span>Our Caues</Span>
+              <div class="content caption">
+                <v-list dense  shaped color="grey lighten-4 text-wrap" style="max-width:15rem;text-transform: lowercase;">
+                  <v-list-item>
+                      <v-list-item-content>
+                        <v-list-item-title>
+                        <router-link to="/our-cause/overview">
+                            <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                                <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                                >mdi-arrow-right-drop-circle-outline</v-icon>
+                                <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>
+                                 Overview
+                            </v-btn>
+                            
+                            </v-hover>
+                        </router-link>
+                        </v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title>
+                      <router-link to="/our-cause/ending-polio">
+                        <v-hover v-slot:default="{ hover }">
+                          <v-btn depressed class="overline"  @click="btnClicked">
+                            <v-icon
+                              v-if="hover"
+                              class="title transition-fast-in-fast-out"
+                            >mdi-arrow-right-drop-circle-outline</v-icon>
+                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Ending Polio
+                          </v-btn>
+                        </v-hover>
+                      </router-link>
+                    </v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title>
+                      <router-link to="/get-involved/rotary-clubs">
+                        <v-hover v-slot:default="{ hover }">
+                          <v-btn class="overline"  depressed @click="btnClicked">
+                            <v-icon
+                              v-if="hover"
+                              class="title transition-fast-in-fast-out"
+                            >mdi-arrow-right-drop-circle-outline</v-icon>
+                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Rotary Clubs
+                          </v-btn>
+                        </v-hover>
+                      </router-link>
+                    </v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title>
+                      <router-link to="/get-involved/interact-clubs">
+                        <v-hover v-slot:default="{ hover }">
+                          <v-btn depressed @click="btnClicked" class="overline" >
+                            <v-icon
+                              v-if="hover"
+                              class="title transition-fast-in-fast-out"
+                            >mdi-arrow-right-drop-circle-outline</v-icon>
+                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Interact Clubs
+                          </v-btn>
+                        </v-hover>
+                      </router-link>
+                    </v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title>
+                      <router-link to="/our-leaders">
+                        <v-hover v-slot:default="{ hover }">
+                          <v-btn depressed @click="btnClicked" class="overline" >
+                            <v-icon
+                              v-if="hover"
+                              class="title transition-fast-in-fast-out"
+                            >mdi-arrow-right-drop-circle-outline</v-icon>
+                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Rotaract club
+                          </v-btn>
+                        </v-hover>
+                      </router-link>
+                    </v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title>
+                      <router-link to="/projects">
+                        <v-hover v-slot:default="{ hover }">
+                          <v-btn depressed @click="btnClicked" class="overline" >
+                            <v-icon
+                              v-if="hover"
+                              class="title transition-fast-in-fast-out"
+                            >mdi-arrow-right-drop-circle-outline</v-icon>
+                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Projects
+                          </v-btn>
+                        </v-hover>
+                      </router-link>
+                    </v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title class="caption">
+                      <router-link to="/partnerships">
+                        <v-hover v-slot:default="{ hover }">
+                          <v-btn depressed @click="btnClicked" class="overline" >
+                            <v-icon
+                              v-if="hover"
+                              class="title transition-fast-in-fast-out"
+                            >mdi-arrow-right-drop-circle-outline</v-icon>
+                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Partnerships
+                          </v-btn>
+                        </v-hover>
+                      </router-link>
+                    </v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title class="caption">
+                    </v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title class="overline">
+                    </v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title class="caption">
+                    </v-list-item-title>
+                  </v-list-item>
+                </v-list>
+              </div>
+             </div>
           </v-flex>
         </v-layout>
       </v-card>
