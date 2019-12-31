@@ -61,13 +61,18 @@
         </v-container>
       </div>
     </div>
+    <pagefooter/>
   </div>
 </template>
 
 <script>
-export default {};
+import pagefooter from "@/components/footer.vue";
+export default {
+  components: {
+    pagefooter
+  }
+};
 </script>
-
 <style scoped>
 .structure {
   background-image: url(https://www.rotary.org/sites/default/files/styles/w_2800/public/ENP-hero-w3000xh2000.jpg?itok=gfNnqKfK);

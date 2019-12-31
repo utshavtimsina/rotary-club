@@ -82,6 +82,10 @@ const routes = [
   {
     path:'/our-cause/ending-polio',
     component:()=> import ('../views/our-cause/Ending-Polio'),
+  },
+  {
+    path:'/our-cause/promoting-peace',
+    component:()=> import ('../views/our-cause/Promoting-Peace'),
   }
   
   

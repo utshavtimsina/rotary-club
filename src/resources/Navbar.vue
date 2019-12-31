@@ -378,14 +378,14 @@
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-title>
-                      <router-link to="/get-involved/rotary-clubs">
+                      <router-link to="/our-cause/promoting-peace">
                         <v-hover v-slot:default="{ hover }">
                           <v-btn class="overline"  depressed @click="btnClicked">
                             <v-icon
                               v-if="hover"
                               class="title transition-fast-in-fast-out"
                             >mdi-arrow-right-drop-circle-outline</v-icon>
-                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Rotary Clubs
+                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Promoting peace
                           </v-btn>
                         </v-hover>
                       </router-link>
