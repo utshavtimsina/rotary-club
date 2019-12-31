@@ -280,7 +280,7 @@
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-title>
-                      <router-link to="/our-leaders">
+                      <router-link to="/get-involved/rotaract-clubs">
                         <v-hover v-slot:default="{ hover }">
                           <v-btn depressed @click="btnClicked" class="overline" >
                             <v-icon

@@ -68,6 +68,11 @@ const routes = [
   {
     path:'/get-involved/interact-clubs',
     component:()=> import ('../views/get-involved/Interact-Clubs'),
+  },
+  {
+    
+    path:'/get-involved/rotaract-clubs',
+    component:()=> import ('../views/get-involved/rotaract-clubs.vue'),
   }
   
   
