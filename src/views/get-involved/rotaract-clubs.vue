@@ -8,7 +8,7 @@
       </v-container>
     </v-card>
     <v-card class="text-center" flat>
-      <v-flex md6 class="mx-auto mt-12 display-1">
+      <v-flex md6 class="mx-auto pt-12 display-1">
         <p>Join the global movement of young leaders who are developing innovative solutions to the world’s most pressing challenges.</p>
       </v-flex>
       <v-layout row align-center>
