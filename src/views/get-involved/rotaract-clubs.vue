@@ -3,7 +3,8 @@
     <v-card flat class="structure">
       <v-container style="text-align: center;">
         <v-layout column>
-          <p class="display-3 my-8 white--text text-center">Rotaract Clubs</p>
+          <p class="display-3 white--text text-center" style="position: absolute;bottom:10%;left:50%;transform:translate(-50%,-50%)">
+    Rotaract Clubs</p>
         </v-layout>
       </v-container>
     </v-card>
@@ -193,6 +194,6 @@ export default {
   background-size: cover; /*Resize the background image to cover the entire container*/
   width: 100%;
   padding: 5% 3%;
-  height: 400px;
+  height: 600px;
 }
 </style>
