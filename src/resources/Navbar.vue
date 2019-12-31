@@ -250,7 +250,7 @@
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-title>
-                      <router-link to="/our-structure">
+                      <router-link to="/get-involved/rotary-clubs">
                         <v-hover v-slot:default="{ hover }">
                           <v-btn class="overline"  depressed @click="btnClicked">
                             <v-icon
@@ -265,7 +265,7 @@
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-title>
-                      <router-link to="/rotary-foundation">
+                      <router-link to="/get-involved/interact-clubs">
                         <v-hover v-slot:default="{ hover }">
                           <v-btn depressed @click="btnClicked" class="overline" >
                             <v-icon

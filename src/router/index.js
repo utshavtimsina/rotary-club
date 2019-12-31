@@ -11,43 +11,43 @@ const routes = [
   },
   {
     path:'/overview',
-    component:()=> import ('../views/Overview.vue'),
+    component:()=> import ('../views/about-rotary/Overview.vue'),
   },
   {
     path:'/history',
-    component:()=> import ('../views/History.vue'),
+    component:()=> import ('../views/about-rotary/History.vue'),
   },
   {
     path:'/rotary-foundation',
-    component:()=> import ('../views/rotary-foundation.vue'),
+    component:()=> import ('../views/about-rotary/rotary-foundation.vue'),
   },
   {
     path:'/our-structure',
-    component:()=> import ('../views/Our-Structure.vue'),
+    component:()=> import ('../views/about-rotary/Our-Structure.vue'),
   },
   {
     path:'/our-leaders',
-    component:()=> import ('../views/Our-Leaders.vue'),
+    component:()=> import ('../views/about-rotary/Our-Leaders.vue'),
   },
   {
     path:'/diversity-equity-and-inclusion',
-    component:()=> import ('../views/Diversity-Equity-And-Inclusion.vue'),
+    component:()=> import ('../views/about-rotary/Diversity-Equity-And-Inclusion.vue'),
   },
   {
     path:'/financials',
-    component:()=> import ('../views/Financials.vue'),
+    component:()=> import ('../views/about-rotary/Financials.vue'),
   },
   {
     path:'/partnerships',
-    component:()=> import ('../views/Partnerships.vue'),
+    component:()=> import ('../views/about-rotary/Partnerships.vue'),
   },
   {
     path:'/membership',
-    component:()=> import ('../views/Membership.vue'),
+    component:()=> import ('../views/about-rotary/Membership.vue'),
   },
   {
     path:'/careers',
-    component:()=> import ('../views/careers.vue'),
+    component:()=> import ('../views/about-rotary/careers.vue'),
   },
   {
     path:'/join',
@@ -56,6 +56,18 @@ const routes = [
   {
     path:'/projects',
     component:()=> import ('../views/projects.vue'),
+  },
+  {
+    path:'/get-involved/overview',
+    component:()=> import ('../views/get-involved/Overview'),
+  },
+  {
+    path:'/get-involved/rotary-clubs',
+    component:()=> import ('../views/get-involved/Rotary-Clubs'),
+  },
+  {
+    path:'/get-involved/interact-clubs',
+    component:()=> import ('../views/get-involved/Interact-Clubs'),
   }
   
   
