@@ -393,14 +393,14 @@
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-title>
-                      <router-link to="/get-involved/interact-clubs">
+                      <router-link to="/our-cause/fighting-disease">
                         <v-hover v-slot:default="{ hover }">
                           <v-btn depressed @click="btnClicked" class="overline" >
                             <v-icon
                               v-if="hover"
                               class="title transition-fast-in-fast-out"
                             >mdi-arrow-right-drop-circle-outline</v-icon>
-                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Interact Clubs
+                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Fighting disease
                           </v-btn>
                         </v-hover>
                       </router-link>
@@ -408,14 +408,14 @@
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-title>
-                      <router-link to="/our-leaders">
+                      <router-link to="/our-cause/providing-clean-water">
                         <v-hover v-slot:default="{ hover }">
                           <v-btn depressed @click="btnClicked" class="overline" >
                             <v-icon
                               v-if="hover"
                               class="title transition-fast-in-fast-out"
                             >mdi-arrow-right-drop-circle-outline</v-icon>
-                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Rotaract club
+                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Providing clean water
                           </v-btn>
                         </v-hover>
                       </router-link>
@@ -423,14 +423,14 @@
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-title>
-                      <router-link to="/projects">
+                      <router-link to="/our-cause/supporting-education">
                         <v-hover v-slot:default="{ hover }">
                           <v-btn depressed @click="btnClicked" class="overline" >
                             <v-icon
                               v-if="hover"
                               class="title transition-fast-in-fast-out"
                             >mdi-arrow-right-drop-circle-outline</v-icon>
-                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Projects
+                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Supporting Education
                           </v-btn>
                         </v-hover>
                       </router-link>
@@ -438,14 +438,14 @@
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-title class="caption">
-                      <router-link to="/partnerships">
+                      <router-link to="/our-cause/saving-mothers-and-children">
                         <v-hover v-slot:default="{ hover }">
                           <v-btn depressed @click="btnClicked" class="overline" >
                             <v-icon
                               v-if="hover"
                               class="title transition-fast-in-fast-out"
                             >mdi-arrow-right-drop-circle-outline</v-icon>
-                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Partnerships
+                            <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Saving Mothers <br> 8and-children
                           </v-btn>
                         </v-hover>
                       </router-link>

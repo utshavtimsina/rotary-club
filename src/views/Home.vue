@@ -1,15 +1,15 @@
 <template>
   <div class="home" >
     <v-card  class="black" style="z-index:1;">
+      <div>
       <video style="z-index:1;" width="100%" height="100%" autoplay="" loop="" muted=""  data-webm="https://www.rotary.org/en/sites/all/themes/rotary_rotaryorg/media/home/AmbientWebDemo_06.webm" data-mp4="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/media/home/AmbientWebDemo_06.mp4">
       <source src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/media/home/AmbientWebDemo_06.webm" type="video/webm">
       <source src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/media/home/AmbientWebDemo_06.mp4" type="video/mp4">
       </video>
-
-        <v-overlay
+   <v-overlay
           absolute="absolute"
           :value="overlay"
-         
+         style="positon:absolute;z-index:4;"
         >
           <v-container >
             <v-layout row>
@@ -33,6 +33,7 @@
             </v-layout>
           </v-container>
         </v-overlay>
+   </div>
     </v-card>
     <v-card class="pa-8 map">
       <v-container class="pa-8">
