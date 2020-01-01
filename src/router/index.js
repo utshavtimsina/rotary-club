@@ -102,6 +102,14 @@ const routes = [
   {
     path:'/our-cause/saving-mothers-and-children',
     component:()=> import ('../views/our-cause/Saving-Mothers-And-Children'),
+  },
+  {
+    path:'/our-cause/growing-local-economies',
+    component:()=> import ('../views/our-cause/growing-local-economies'),
+  },
+  {
+    path:'/our-cause/disaster-response',
+    component:()=> import ('../views/our-cause/disaster-response'),
   }
   
   

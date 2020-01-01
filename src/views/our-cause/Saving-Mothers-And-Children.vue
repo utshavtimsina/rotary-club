@@ -65,82 +65,103 @@
           class="pa-3 title font-weight-light"
         >The Rotary Foundation reaches mothers and children in need by giving communities the help and training they need to take control of their own maternal and infant health care.</p>
         <v-layout>
-          <v-flex md6>
+          <v-flex md8>
             <p class="pa-3 title font-weight-light">
-              <b>Opening schools:</b> In Afghanistan, Rotary members opened a girls’ school to break the cycle of poverty and social imbalance.
+              <b>Mobile prenatal clinics</b>  
             </p>
             <p class="pa-3 title font-weight-light">
-              <b>Teaching adults to read:</b> Rotary members in the United States partnered with ProLiteracy Detroit to recruit and train tutors after a study showed that more than half of the local adult population was functionally illiterate.
-            </p>
-          </v-flex>
-          <v-flex class="my-10 text-center">
-            <h1 class="display-3 green--text">500</h1>
-            <p
-              class="py-3 title green--text font-weight-light"
-            >adults raised their reading levels by three grades in Detroit</p>
-          </v-flex>
-        </v-layout>
-        <v-layout>
-          <v-flex md6>
-            <p class="pa-3 title font-weight-light">
-              <b>New teaching methods:</b> The SOUNS program in South Africa, Puerto Rico and the United States teaches educators how to improve literacy by teaching children to recognize letters by sounds instead of names.
-            </p>
-            <p class="pa-3 title font-weight-light">
-              <b>Making schools healthy:</b> Rotarians are providing clean, fresh water to every public school in Lebanon so students can be healthier and get a better education.
+             Haiti has the highest maternal and infant mortality rate of any country in the western hemisphere. Rotary provided a fully equipped medical Jeep to volunteers and midwives to reach mothers and children in remote areas.
+              <p class="pa-3 title font-weight-light">
+             <b class="py-3"> Cancer screening</b><br ><br>
+             Rotarians provided a mobile cancer screening unit and awareness trainings around Chennai, India, where there is a high mortality rate of women with breast and cervical cancer due to late diagnosis.
+            <br><br><b >Preventing injuries and deaths</b><br><br>
+            Rotary members launched a $3 million, five-year pilot to save lives of mothers and children during home deliveries in Nigeria. Since 2005, they’ve also repaired 1,500 obstetric fistulas — 500 more than their initial goal — restoring dignity and hope to vulnerable mothers.
             </p>
           </v-flex>
-          <v-flex class="my-10 text-center">
-            <h1 class="display-3 blue--text">$100 mil</h1>
+          <v-flex md4 class="my-10 text-center">
+            <v-card>
+                 <img width="100%" src="  https://www.rotary.org/sites/default/files/styles/w_2400/public/cause%20women%20quote%20block%202800x2800.jpg?itok=BFzMnOiM 2400w" alt="">
             <p
               class="py-3 title blue--text font-weight-light"
-            >in grants to get clean water in Lebanese schools</p>
+            >“If mothers are empowered and healthy, so are their families, leading to an alleviation of poverty and hunger.” Robert Zinser, co-founder of the Rotarian Action Group for Population and Development and retired president for Asia at chemical giant BASF 
+            </p>
+            </v-card>
+         
           </v-flex>
         </v-layout>
-        <p
-          class="pa-3 display-2 font-weight-light wf-active"
-        >" When you teach somebody how to read, they have that for a lifetime. It ripples through the community, one by one."</p>
       </v-container>
     </div>
 
     <div style="margin:5% 0%; position:relative;">
       <v-img
         height="100%"
-        src="    https://www.rotary.org/sites/default/files/styles/w_1728/public/new%20education%20share.jpg?itok=KbPYEYUg 1728w, https://www.rotary.org/sites/default/files/styles/w_2160/public/new%20education%20share.jpg?itok=m7G3GXQe 2160w, https://www.rotary.org/sites/default/files/styles/w_2800/public/new%20education%20share.jpg?itok=9nGj2Kau 2800w"
+        src="  https://www.rotary.org/sites/default/files/styles/w_2800/public/cause%20women%20share%202800x1800.jpg?itok=MC5_vV3f 2800w"
       >
         <v-sheet
           width="40%"
           class="red lighten-1 white--text"
           style=" position:absolute; top:30%; left:10%; "
         >
-          <p class="title pa-4">Help spread the word about Rotary’s efforts to support education</p>
+          <p class="title pa-4">Spread the word about Rotary’s efforts to save mothers and children.</p>
           <v-icon class="pa-4 display-3 white--text">mdi-facebook-box</v-icon>
           <v-icon class="pa-4 display-3 white--text">mdi-twitter</v-icon>
           <hr class="ma-4" />
-          <p class="title pa-4">What can you do to support education and bring literacy to everyone?</p>
+          <p class="title pa-4">What can you do to support mothers and their children?</p>
           <v-btn class="pink white--text" height="50px" block>Make a donation</v-btn>
           <v-btn class="pink white--text my-2" height="50px" block>Become a member</v-btn>
         </v-sheet>
       </v-img>
     </div>
-
-    <cause />
-
+<div class="imagess">
+  <h1 class="white--text text-center py-10"> EXPLORE OTHER CAUSES</h1>
+  <div style="margin:5% 0%;">
+    <cause  />
+    </div>
+</div>
+<div style="margin:0% 10%;">
+  <related :flex="flex" :length='flex.length'/>
+  </div>
     <pagefooter />
   </div>
 </template>
 
 <script>
+import related from '@/components/related'
 import cause from "@/components/cause-navigation";
 import pagefooter from "@/components/footer.vue";
 export default {
   components: {
     pagefooter,
-    cause
+    cause,
+    related,
   },
   data: function() {
     return {
       overlay: true,
       absolute: true,
+      flex:[
+        {
+          topic:'Related',
+          src:['Telemedicine brings health care to rural Nigeria'],
+          img:" https://www.rotary.org/sites/default/files/styles/w_600/public/nigeria2_crop.jpg?itok=KJ_tdARc 600w"
+
+        },
+        {
+          topic:'',
+          src:[
+          'Rotarians save newborns in Brazil',
+          ],
+          img:""
+        }
+        ,{
+          topic:'Resources',
+          src:[
+            'See how our members are strengthening communities on Rotary Showcase',
+            'Find a project to support on Rotary Ideas',
+            ],
+          img:""
+        }
+      ],
       items: [
         {
           src:
@@ -152,7 +173,7 @@ export default {
         },
         {
           src:
-            "    https://www.rotary.org/sites/default/files/styles/w_700/public/cause%20women%20carousel%20sustain%20700x700.jpg?itok=0moAy-Hx 700w",
+            "https://www.rotary.org/sites/default/files/styles/w_700/public/cause%20women%20carousel%20sustain%20700x700.jpg?itok=0moAy-Hx 700w",
           ribbon: "   SUSTAINABLE PROGRAMS",
           content:
             "   Rotary programs improve women’s access to skilled health personnel: doctors, nurses, midwives, or community health care workers. ",
@@ -188,6 +209,8 @@ export default {
   background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/concrete_seamless.jpg);
 }
 .imagess {
-  background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/geo-green.png);
+  background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/geo-darkblue.png);
+  width: 100%;
+  position: relative;
 }
 </style>
