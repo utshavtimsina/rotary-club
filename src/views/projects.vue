@@ -7,7 +7,7 @@
         </v-layout>
       </v-container>
     </v-card>
-    <v-card class="card pt-8 pb-8">
+    <v-card class="card pt-8 pb-8" flat>
       <div style="width:60%;display:inline-block">
         <p
           class="display-1 mx-auto"
@@ -71,13 +71,18 @@
         </v-container>
       </div>
     </v-card>
-    
+    <div style="margin:0% 10%">
+    <flex :flex="flex" :length='flex.length'>
+      </flex>
+      </div>
   </div>
 </template>
 
 <script>
+import flex from "../components/related"
 export default {
   components:{
+    flex
   },
   data: function() {
     return {
@@ -106,7 +111,33 @@ export default {
             "Working with local community leaders, Rotary clubs piped clean water to remote villages in Ghana, freeing women and children from spending hours searching for and fetching water.",
           color: "#9b1238"
         }
-      ]
+      ],
+      flex:[
+        {
+          topic:'Related',
+          src:['A university president and Rotary club fight Boko Haram'],
+          img:"https://www.rotary.org/sites/default/files/styles/w_600/public/boko%20cause%20tile.jpg?itok=07W57Zrk 600w"
+
+        },
+        {
+          topic:'',
+          src:[
+          'Improving literacy through teacher training',
+          'How education is breaking the cycle of modern slavery',
+          'Rotary program boosts scientific literacy in Taiwan',
+          'Rotary club pairs students with celebrity mentors',
+          ],
+          img:""
+        }
+        ,{
+          topic:'Resources',
+          src:[
+            'Learn about our WASH in Schools Target Challenge ',
+            'See how our members advocate for basic education in Rotary Showcase',
+            ],
+          img:""
+        }
+      ],
     };
   }
 };
