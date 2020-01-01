@@ -71,11 +71,14 @@
         </v-container>
       </div>
     </v-card>
+    
   </div>
 </template>
 
 <script>
 export default {
+  components:{
+  },
   data: function() {
     return {
       items: [
