@@ -3,12 +3,13 @@
     <v-card flat class="structure">
       <v-container style="text-align: center;">
         <v-layout column>
-          <p class="display-3 my-8 white--text text-center">Rotaract Clubs</p>
+          <p class="display-3 white--text text-center" style="position: absolute;bottom:10%;left:50%;transform:translate(-50%,-50%)">
+    Rotaract Clubs</p>
         </v-layout>
       </v-container>
     </v-card>
     <v-card class="text-center" flat>
-      <v-flex md6 class="mx-auto mt-12 display-1">
+      <v-flex md6 class="mx-auto pt-12 display-1">
         <p>Join the global movement of young leaders who are developing innovative solutions to the world’s most pressing challenges.</p>
       </v-flex>
       <v-layout row align-center>
@@ -193,6 +194,6 @@ export default {
   background-size: cover; /*Resize the background image to cover the entire container*/
   width: 100%;
   padding: 5% 3%;
-  height: 400px;
+  height: 600px;
 }
 </style>
