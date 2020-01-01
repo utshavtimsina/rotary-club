@@ -82,6 +82,26 @@ const routes = [
   {
     path:'/our-cause/ending-polio',
     component:()=> import ('../views/our-cause/Ending-Polio'),
+  },
+  {
+    path:'/our-cause/promoting-peace',
+    component:()=> import ('../views/our-cause/Promoting-Peace'),
+  },
+  {
+    path:'/our-cause/fighting-disease',
+    component:()=> import ('../views/our-cause/Fighting-Disease'),
+  },
+  {
+    path:'/our-cause/providing-clean-water',
+    component:()=> import ('../views/our-cause/Providing-Clean-Water'),
+  },
+  {
+    path:'/our-cause/supporting-education',
+    component:()=> import ('../views/our-cause/Supporting-Education'),
+  },
+  {
+    path:'/our-cause/saving-mothers-and-children',
+    component:()=> import ('../views/our-cause/Saving-Mothers-And-Children'),
   }
   
   
