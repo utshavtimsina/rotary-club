@@ -1,8 +1,8 @@
 <template>
-   <div >
+   <div>
 
-     <v-container>
-       <v-layout row  >
+     <v-container >
+       <v-layout row  style="background:url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/network.png) no-repeat 50% 50%">
          <v-spacer></v-spacer>
          <v-flex md2 class=" mx-9 my-9 transparent">
             <div class="differences-person-1 transparent" ></div>

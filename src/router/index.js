@@ -110,6 +110,14 @@ const routes = [
   {
     path:'/our-cause/disaster-response',
     component:()=> import ('../views/our-cause/disaster-response'),
+  },
+  {
+    path:'/our-programs',
+    component:()=> import ('../views/our-programs/our-programs.vue'),
+  },
+  {
+    path:'/youth-programs',
+    component:()=> import ('../views/our-programs/youth-programs.vue'),
   }
   
   
