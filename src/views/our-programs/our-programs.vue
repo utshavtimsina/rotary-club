@@ -13,8 +13,8 @@
     </v-card>
     <v-card flat class="seamless">
       <v-flex
-        md7
-        class="mx-auto display-1 font-weight-light pt-8 pb-8"
+        md8
+        class="mx-auto display-1 font-weight-light pt-12 pb-8"
       >Rotary’s programs are developing the next generation of leaders, providing funding to make the world a better place, and making peace a priority. And our programs are not just for club members. Learn how you can make a difference in your community through Rotary.</v-flex>
       <div style="width:88%" class="mx-auto">
         <!-- tile cards started from here -->

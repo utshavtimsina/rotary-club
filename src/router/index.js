@@ -116,8 +116,12 @@ const routes = [
     component:()=> import ('../views/our-programs/our-programs.vue'),
   },
   {
-    path:'/youth-programs',
+    path:'/our-programs/youth-programs',
     component:()=> import ('../views/our-programs/youth-programs.vue'),
+  },
+  {
+    path:'/our-programs/rotary-youth-leadership-awards',
+    component:()=> import ('../views/our-programs/rotary-youth-leadership-awards.vue'),
   }
   
   
