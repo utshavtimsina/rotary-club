@@ -122,8 +122,11 @@ const routes = [
   {
     path:'/our-programs/rotary-youth-leadership-awards',
     component:()=> import ('../views/our-programs/rotary-youth-leadership-awards.vue'),
-  }
-  
+  },
+  {
+    path:'/our-programs/peace-fellowships',
+    component:()=> import ('../views/our-programs/peace-fellowships.vue'),
+  },
   
   
   

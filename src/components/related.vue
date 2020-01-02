@@ -1,7 +1,8 @@
 <template>
   <div
-   style="border-top:1px solid black" class="mx-auto"
+ class="mx-auto"
   >
+  <hr>
     <v-layout row>
         <!-- <v-flex></v-flex> -->
       <v-flex class="pa-4 text-left" 
