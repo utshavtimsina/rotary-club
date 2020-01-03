@@ -265,7 +265,8 @@
       </div>
     </div>
     <div style="margin:0% 10%">
-      <related :flex="flex" :length="flex.length"></related>
+      <related :flex="flex" :length="flex.length"
+       ></related>
     </div>
   </div>
 </template>

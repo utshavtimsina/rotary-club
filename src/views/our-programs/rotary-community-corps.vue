@@ -122,7 +122,10 @@
       </v-layout>
     </div>
     <div style="display:inline-block">
-      <related :flex="flex" :length="flex.length"></related>
+      <related :flex="flex" :length="flex.length"
+      img_height="169px"
+      img_width="272px"
+      ></related>
     </div>
   </div>
 </template>

@@ -12,8 +12,8 @@
         <p>{{i.topic}}</p>
         <v-img
         v-if="i.img!=''"
-        height="169px"
-        width="300px"
+        :height="img_height"
+        :width="img_width"
         :src="i.img"
         >
         </v-img>
@@ -40,8 +40,10 @@ export default {
         }
     },
   props: {
-    flex:Object,
+    flex:Array,
     length,
+    img_height:String,
+    img_width:String,
   }
 };
 </script>

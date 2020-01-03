@@ -123,7 +123,10 @@ const routes = [
     path:'/our-programs/rotary-youth-leadership-awards',
     component:()=> import ('../views/our-programs/rotary-youth-leadership-awards.vue'),
   },
-  
+  {
+    path:'/our-programs/youth-exchanges',
+    component:()=> import ('../views/our-programs/youth-exchanges.vue'),
+  },
   {
     path:'/our-programs/peace-fellowships',
     component:()=> import ('../views/our-programs/peace-fellowships.vue'),
@@ -133,7 +136,26 @@ const routes = [
     path:'/our-programs/rotary-community-corps',
     component:()=> import ('../views/our-programs/rotary-community-corps.vue'),
   },
-  
+  {
+    path:'/our-programs/grants',
+    component:()=> import ('../views/our-programs/grants.vue'),
+
+  },
+  {
+    path:'/our-programs/new-generations-service-exchange',
+    component:()=> import ('../views/our-programs/new-generations-service-exchange.vue'),
+
+  },
+  {
+    path:'/our-programs/scholarships',
+    component:()=> import ('../views/our-programs/scholarships.vue'),
+
+  },
+  {
+    path:'/our-programs/friendship-exchange',
+    component:()=> import ('../views/our-programs/friendship-exchange.vue'),
+
+  },
   
   
 ]
