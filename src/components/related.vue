@@ -1,28 +1,30 @@
 <template>
   <div
- class="mx-auto"
+ class="mt-12"
   >
   <hr>
     <v-layout row>
         <!-- <v-flex></v-flex> -->
-      <v-flex class="pa-4 text-left" 
+      <v-flex class="pa-4 text-left mx-auto" 
       :class="size"
       v-for="(i,index) in flex " 
       :key="index">
         <p>{{i.topic}}</p>
         <v-img
         v-if="i.img!=''"
-        height="60%"
-        width="100%"
+        height="169px"
+        width="300px"
         :src="i.img"
         >
         </v-img>
+        <div v-if="i.src!=''">
         <p
         class="pt-4 text-left"
         v-for="(links,j) in i.src" :key="j"
         >
             <a :href="links">{{links}}</a>
         </p>
+        </div>
       </v-flex>
       <!-- <v-flex></v-flex> -->
     </v-layout>

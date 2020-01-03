@@ -64,7 +64,7 @@
           <p
             class="font-weight-light mb-4"
           >More than 1,000 peace fellowship alumni are working in over 100 countries.</p>
-          <hr>
+          <hr />
         </div>
         <div class="mt-12 text-left">
           <h1 class="font-weight-medium">Is a peace fellowship right for me?</h1>
@@ -94,7 +94,7 @@
           style="width:352px; border:1px solid #e3dfde"
           class="mx-auto"
           hide-delimiters
-          height="100%"
+          height="710px"
         >
           <v-carousel-item v-for="(item,i) in items" :key="i">
             <v-sheet height="100%" width="100%  " color="white">
@@ -168,7 +168,7 @@
             <h3 class="title">
               <a href="#">Uppsala University, Uppsala, Sweden</a>
               (
-              <a href="#" >fact sheet</a>)
+              <a href="#">fact sheet</a>)
             </h3>
             <p
               class="title font-weight-light"
@@ -177,9 +177,9 @@
           <div class="pt-4">
             <h2 class="pb-4">Certificate program</h2>
             <h3 class="title">
-              <a href="#" >Chulalongkorn University, Bangkok, Thailand</a>
+              <a href="#">Chulalongkorn University, Bangkok, Thailand</a>
               (
-              <a href="#" >fact sheet</a>)
+              <a href="#">fact sheet</a>)
             </h3>
             <p
               class="title font-weight-light"
@@ -244,41 +244,38 @@
       </div>
       <div class="mt-12 text-center">
         <v-flex md7 class="mx-auto">
-          <h1 class="font-weight-light">Help us create the next generation of peacemakers with a gift to the Rotary Peace Centers</h1>
+          <h1
+            class="font-weight-light"
+          >Help us create the next generation of peacemakers with a gift to the Rotary Peace Centers</h1>
           <div class="mt-8">
-            <v-btn color="#019FCB" 
-            height="50px"
-            width="150px"
-            class="white--text"
-            >DONATE</v-btn>
+            <v-btn color="#019FCB" height="50px" width="150px" class="white--text">DONATE</v-btn>
             <div class="mt-8">
-            <h1 class="font-weight-light">
-                Other ways to support us
-            </h1>
-            <p class="title font-weight-light mt-4">
-                Advance peace and development around the world by <a href="">promoting</a> the peace fellowship program.
-            </p>
-            <p class="title font-weight-light mt-4">
-                Your district can support the Rotary Peace Centers by allocating at least $25,000 annually in District Designated Funds. Learn how to become a <a href="">Peacebuilder District</a>.
-            </p>
+              <h1 class="font-weight-light">Other ways to support us</h1>
+              <p class="title font-weight-light mt-4">
+                Advance peace and development around the world by
+                <a href>promoting</a> the peace fellowship program.
+              </p>
+              <p class="title font-weight-light mt-4">
+                Your district can support the Rotary Peace Centers by allocating at least $25,000 annually in District Designated Funds. Learn how to become a
+                <a href>Peacebuilder District</a>.
+              </p>
             </div>
           </div>
         </v-flex>
       </div>
     </div>
     <div style="margin:0% 10%">
-    <related :flex="flex" :length="flex.length">
-    </related>
+      <related :flex="flex" :length="flex.length"></related>
     </div>
   </div>
 </template>
 
 <script>
-import related from "@/components/related.vue"
+import related from "@/components/related.vue";
 export default {
-    components:{
-        related
-    },
+  components: {
+    related
+  },
   data: function() {
     return {
       items: [
@@ -307,36 +304,37 @@ export default {
             "“It’s often individuals who have been impacted by conflict themselves who want to make a change in the world. Being given the opportunity to pursue a master’s in peace and conflict studies opened doors I never thought possible in terms of connections in the field of peace and development.” — Marie-Paule Attema, recent graduate of Rotary Peace Center at the University of Queensland"
         }
       ],
-      flex:[
-          {
-              topic:'RESOURCES & REFERENCES',
-              img:'https://www.rotary.org/sites/default/files/styles/w_600/public/peace%20social.jpg?itok=Gb0qoOPu 600w',
-              src:[
-                  'Police officer takes the lessons of the Rotary peace program to the streets'
-              ],
-          },
-          {
-              topic:'',
-              img:'',
-              src:[
-                  'From peace fellow to international advocate',
-                  'Rotary peace fellow helps refugees fleeing Myanmar',
-                  'Peace fellow puts political theory into practice',
-                  'Fellowship helps peace scholar write book',
-                  'Peace fellow wins award for work in Canada',
-                  'Rotary peace fellow applies lessons to life in Bogotá',
-                  'Rotary Peace Fellowships brochure (PDF)',
-              ],
-          },
-          {
-              topic:'',
-              img:'',
-              src:[
-                  'Follow Rotary Peace Centers on Facebook',
-                  'Sign up for our Peace in Action newsletter',
-              ],
-          },
-      ],
+      flex: [
+        {
+          topic: "RESOURCES & REFERENCES",
+          img:
+            "https://www.rotary.org/sites/default/files/styles/w_600/public/peace%20social.jpg?itok=Gb0qoOPu 600w",
+          src: [
+            "Police officer takes the lessons of the Rotary peace program to the streets"
+          ]
+        },
+        {
+          topic: "",
+          img: "",
+          src: [
+            "From peace fellow to international advocate",
+            "Rotary peace fellow helps refugees fleeing Myanmar",
+            "Peace fellow puts political theory into practice",
+            "Fellowship helps peace scholar write book",
+            "Peace fellow wins award for work in Canada",
+            "Rotary peace fellow applies lessons to life in Bogotá",
+            "Rotary Peace Fellowships brochure (PDF)"
+          ]
+        },
+        {
+          topic: "",
+          img: "",
+          src: [
+            "Follow Rotary Peace Centers on Facebook",
+            "Sign up for our Peace in Action newsletter"
+          ]
+        }
+      ]
     };
   }
 };
@@ -353,7 +351,7 @@ export default {
   height: 600px;
 }
 
-a:hover{
+a:hover {
   background-color: #ccf1ff;
 }
 </style>
