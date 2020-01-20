@@ -1,13 +1,19 @@
 <template>
   <div>
-    <span class="hero-background">
-      <v-overlay absolute="absolute" :value="overlay" z-index="-1" opacity="0.2">
-        <h1 class="display-3">Our History</h1>
-      </v-overlay>
-    </span>
+    <v-card class="hero-background">
+      <div class="hero-text">
+        <p
+          class="display-3  white--text text-center"
+        >
+         History
+          <br />
+          <v-icon color="white" size="60px" class="chevron">mdi-chevron-down</v-icon>
+        </p>
+      </div>
+    </v-card>
     <v-card style="z-index:1;" class="others" flat>
-      <v-container>
-        <div style="margin-left:20%; margin-right:20% " class="pa-9">
+       
+      <v-flex md10 class="mx-auto mt-9">
           <p
             class="headline font-weight-light"
           >Rotary started with the vision of one man — Paul Harris. The Chicago attorney formed the Rotary Club of Chicago on 23 February 1905, so professionals with diverse backgrounds could exchange ideas and form meaningful, lifelong friendships.</p>
@@ -39,12 +45,11 @@
           <p
             class="headline font-weight-light"
           >We’re not afraid to dream big and set bold goals. We began our fight against polio in 1979 with a project to immunize 6 million children in the Philippines. Today, polio remains endemic in only three countries — down from 125 in 1988.</p>
-        </div>
-      </v-container>
+      </v-flex>
+      
       <v-card>
         <div class="layout-container -gray">
-          <v-container>
-            <div style="margin-left:20%; margin-right:20% " class="pa-9">
+          <v-flex md10 class="mx-auto">
               <h2 class="headline pa-7 text-center">Still making history</h2>
               <p
                 class="headline font-weight-light"
@@ -99,14 +104,14 @@
                   </v-flex>
                 </v-layout>
               </v-container>
+          </v-flex>
             </div>
-          </v-container>
-        </div>
+          
+       
       </v-card>
       <v-card flat>
           <v-container>
-
-           <div style="margin-left:10%; margin-right:10% " class="pa-9">
+            <v-flex md10 class="mx-auto">
         <v-layout  class="blue lighten-1" row align-center="true">
           <v-flex md6 >
             <div>
@@ -126,7 +131,8 @@
             </div>
           </v-flex>
         </v-layout>
-           </div>
+            </v-flex>
+           
         </v-container>
       </v-card>
       <pagefooter />
@@ -159,14 +165,42 @@ export default {
 }
 .hero-background {
   background-image: url(https://www.rotary.org/sites/default/files/styles/w_1728/public/about-history-2800x1800_1.jpg);
-  position: fixed;
+background-attachment: fixed;
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   width: 100%;
-  height: 100%;
-  z-index: initial;
-  top: -12%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 5% 3%;
+  height: 600px;
+}
+.chevron {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.hero-text{
+    position:absolute;
+    height:600px;
+    width:100%;
+    top:105%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+    /* transform: translateY(-300%); */
+    /* height:20vh; */
+    /* bottom:200%; */
+    /* left:50%;
+    top:50%;
+    transform:translate(-50%,-50%); */
+    word-wrap: break-word;
+    /* background-color:rgba(0, 0, 0, 0.1); */
+    /* opacity:0.4; */
 }
 
 .others {

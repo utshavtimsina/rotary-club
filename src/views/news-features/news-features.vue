@@ -226,7 +226,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .zoom:not(:hover) .zooms {
   /* transform:scale(1) translateZ(0); */
   transition: transform 1.5s;

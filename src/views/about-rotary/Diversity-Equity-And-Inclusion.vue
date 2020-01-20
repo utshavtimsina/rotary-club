@@ -9,14 +9,13 @@
               </v-layout>
           </v-container>
       </v-card>
-      <div style="margin:6% 20%;">
+      <v-flex md10 xs12 sm12 class="mx-auto">
         <p class="pa-3 title font-weight-light">
             As a global network that strives to build a world where people unite and take action to create lasting change, Rotary values diversity and celebrates the contributions of people of all backgrounds, regardless of their age, ethnicity, race, color, abilities, religion, socioeconomic status, culture, sex, sexual orientation, and gender identity.
-
         </p>
-      </div>
+      </v-flex>
    <div class="corousal "> 
-      <div style="margin:5% 15%;padding:2% 0%;">
+      <v-flex md10 xs12 sm12 class="mx-auto">
       <v-layout >
         <v-flex >
 
@@ -42,9 +41,9 @@
         </v-flex>
         <v-flex></v-flex>
       </v-layout>
-      </div>
+      </v-flex>
     </div>
-    <div style="margin:6% 20%;">
+     <v-flex md10 xs12 sm12 class="mx-auto">
         <p class="pa-3 title font-weight-light">
           A top priority for Rotary is growing and diversifying our membership to make sure we reflect the communities we serve.
         </p>
@@ -54,7 +53,7 @@
          <p class="pa-3 title font-weight-light">
             Through Rotary, you'll find unique opportunities to get involved. Everyone is welcome in Rotary.
       </p>
-    </div>
+     </v-flex>
       <pagefooter/>
   </div>
 </template>
@@ -99,5 +98,7 @@ export default {
 }
 .corousal{
   background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/concrete_seamless.jpg) 50% 0;
+  width: 100%;
+  height: 100%;
 }
 </style>

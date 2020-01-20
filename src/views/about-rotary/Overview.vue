@@ -1,6 +1,8 @@
 <template>
   <div class="overview" style="">
     <v-img
+      width="100%"
+      height="600px"
       src="https://www.rotary.org/sites/default/files/styles/w_2160/public/who%20overview%202.jpg?itok=sKHAn1ho"
     >
       <v-overlay
@@ -10,12 +12,12 @@
         class="text-center white--text font-weight-light"
         z-index="3"
       >
-      <h1 class="display-3 " >
+      <h1 class="display-3 " style=" position:relative;top:75%;left:50%;transform:translate(-40%,-50%); ">
         Who We Are
       </h1>
       </v-overlay>
     </v-img>
-  <div style="margin:5% 20%;">
+  <v-flex md10 class="mx-auto">
     <v-container >
       <v-card class="pa-5 font-weight-light " flat>
         <h1 class="font-weight-light my-6">
@@ -38,10 +40,10 @@
         <p class="pa-3 title font-weight-light">We provide service to others, promote integrity, and advance world understanding, goodwill, and peace through our fellowship of business, professional, and community leaders.</p>
       </v-card>
     </v-container>
-  </div>
+  </v-flex>
   
     <div class="corousal "> 
-      <div style="margin:5% 15%;padding:2% 0%;">
+     <v-flex md10 class="mx-auto">
       <v-layout align-center="true">
         <v-flex md3>
 
@@ -73,9 +75,9 @@
           </v-carousel>
         </v-flex>
       </v-layout>
-      </div>
+     </v-flex>
     </div>
-    <div style="margin:5% 20%;">
+    <v-flex md10 class="mx-auto">
       <v-container > 
               <h1 class="heading-2 my-5">We work differently</h1>
               <p class="pa-3 title font-weight-light">We see differently: Our multidisciplinary perspective helps us see challenges in unique ways.</p>
@@ -93,7 +95,7 @@
               <p class="pa-3 title font-weight-light">Learn more about <a href="/en/about-rotary/diversity-equity-and-inclusion">Diversity, Equity, and Inclusion</a>.</p>
         
       </v-container>
-    </div>
+    </v-flex>
    <bodyfooter/>
     <pagefooter/>
     

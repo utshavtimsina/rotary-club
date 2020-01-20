@@ -1,12 +1,23 @@
 <template>
   <div class="wrapper-div">
-    
     <v-img
       class="background-img"
+      height="600px"
+      width="99%"
       src="https://www.rotary.org/sites/default/files/styles/w_2800/public/foundation%20hero%202800x1800.JPG?itok=Dv7NQlkI"
-    ></v-img>
-    <v-card class="card pt-8 pb-8">
-      <div class="main-div">
+    >
+      <div class="hero-text">
+        <p
+          class="display-3  white--text text-center"
+        >
+         Rotary Foundation
+          <br />
+          <v-icon color="white" size="60px" class="chevron">mdi-chevron-down</v-icon>
+        </p>
+      </div>
+    </v-img>
+    <v-card class="card pt-8 pb-8" flat>
+      <v-flex md10 class="mx-auto">
         <div>
           <p class="display-1 font-weight-light">
             The Rotary Foundation transforms your gifts into service projects that change lives
@@ -42,48 +53,57 @@
             tile
           >Donate Now</v-btn>
         </div>
-      </div>
-      <div class="next-div pa-12">
-        <p class="title font-weight-bold">HOW THE FOUNDATION MAKES HELP HAPPEN</p>
-        <v-flex md6 class="mx-auto">
-          <v-carousel hide-delimiters height="600">
-            <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src">
-              <v-sheet
-                class="text-left"
-                :color="item.color"
-                style="position:absolute;bottom:0%;width:100%"
-              >
-                <div class="pa-2 text-center">{{item.ribbon}}</div>
-                <div class="white black--text pa-4">{{item.content}}</div>
-                <div class="white pb-4 pl-4">
-                  <a href="#">{{item.link}}</a>
-                </div>
-              </v-sheet>
-            </v-carousel-item>
-          </v-carousel>
+      </v-flex>
+      <div class="next-div">
+        <v-flex md10 class="mx-auto">
+          <p class="title font-weight-bold">HOW THE FOUNDATION MAKES HELP HAPPEN</p>
+          <div class="mt-12">
+            <div
+              class="infogram-embed"
+              data-id="4453c8b1-b1ba-4ba0-b324-bd02ee9dbb41"
+              data-type="interactive"
+              data-title="Rotary Foundation grants"
+            ></div>
+          </div>
+          <v-flex md6 class="mx-auto">
+            
+            <v-carousel hide-delimiters height="100%">
+              <v-carousel-item v-for="(item,i) in items" :key="i" >
+                <img :src="item.src" width="100%" height="80%" alt="">
+                <v-sheet
+                  class="text-left"
+                  :color="item.color"
+                  style="position:absolute;bottom:0%;width:100%"
+                >
+                  <div class="pa-2 text-center">{{item.ribbon}}</div>
+                  <div class="white black--text pa-4">{{item.content}}</div>
+                  <div class="white pb-4 pl-4">
+                    <a href="#">{{item.link}}</a>
+                  </div>
+                </v-sheet>
+              </v-carousel-item>
+            </v-carousel>
+          </v-flex>
+          
         </v-flex>
-        <div class="mt-12">
-          <div
-            class="infogram-embed"
-            data-id="4453c8b1-b1ba-4ba0-b324-bd02ee9dbb41"
-            data-type="interactive"
-            data-title="Rotary Foundation grants"
-          ></div>
-        </div>
       </div>
       <div class="blue-container pa-12">
         <v-layout row>
-          <v-flex class="">
-            <v-img width="590px" class="mx-auto"
+          <v-flex class>
+            <v-img
+              width="590px"
+              class="mx-auto"
               src="https://www.rotary.org/sites/default/files/styles/w_2400/public/Proof-Charity-Navigator_EN.png?itok=qTDxJeXL 2400w"
             ></v-img>
           </v-flex>
-          <v-flex class="">
-            <v-img width="590px" class="mx-auto"
+          <v-flex class>
+            <v-img
+              width="590px"
+              class="mx-auto"
               src="https://www.rotary.org/sites/default/files/styles/w_2400/public/TRF-percentage-spent_EN.png?itok=85HV2IL6 2400w"
             ></v-img>
           </v-flex>
-        </v-layout> 
+        </v-layout>
         <v-img
           width="590"
           class="mx-auto"
@@ -91,26 +111,20 @@
         ></v-img>
       </div>
       <!-- image and red image component -->
-      <v-card 
-      class="white--text" 
-      style="margin:4% 15% 0% 15%" 
-      flat 
-      >
+      <v-flex md10 class="mx-auto white--text mt-9">
         <v-layout row>
           <v-flex md6>
-              <v-img
-                height="100%"
-                src="https://www.rotary.org/sites/default/files/styles/w_600/public/backup%20callout.jpg?itok=KS1buGno"
-              ></v-img>
+            <v-img
+              height="100%"
+              src="https://www.rotary.org/sites/default/files/styles/w_600/public/backup%20callout.jpg?itok=KS1buGno"
+            ></v-img>
           </v-flex>
           <v-flex
             md6
             class="pa-12"
             style="background:url('https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/geo-red.png')"
           >
-            <div 
-            class="mx-auto"
-            >
+            <div class="mx-auto">
               <p class="headline text-left mx-auto">Foundation History</p>
               <p class="subtitle text-left my-8">
                 At the 1917 convention, outgoing Rotary president Arch Klumph proposed setting up an endowment
@@ -129,7 +143,7 @@
             </div>
           </v-flex>
         </v-layout>
-      </v-card>
+      </v-flex>
       <v-flex style="color:black" class="mt-12 mx-auto" md8>
         <div class="mx-auto">
           <p class="display-1 text-left font-weight-bold">Financial structure</p>
@@ -195,7 +209,9 @@
         <v-layout row>
           <v-flex md5>
             <p class="title">EVERY ROTARIAN EVERY YEAR BROCHURES</p>
-            <v-img height="154px" width="272px"
+            <v-img
+              height="154px"
+              width="272px"
               src="https://www.rotary.org/sites/default/files/styles/w_600/public/every.jpg?itok=KEq6yYdN 600w"
             ></v-img>
           </v-flex>
@@ -220,7 +236,7 @@
                 <a
                   href="https://my.rotary.org/en/document/every-rotarian-every-year-brochure-middle-east-and-africa"
                 >Middle East and Africa</a>
-              </li >
+              </li>
               <li class="pa-2">
                 <a
                   href="https://my.rotary.org/en/document/every-rotarian-every-year-brochure-southeast-asia"
@@ -242,7 +258,6 @@
       </v-container>
     </v-card>
   </div>
-  
 </template>
 
 <script>
@@ -310,7 +325,6 @@ export default {
   width: 100%;
 }
 .main-div {
-  width: 60%;
   display: inline-block;
 }
 .content-div {
@@ -322,6 +336,36 @@ export default {
 .infogram-embed {
   display: inline-block;
   width: 50%;
+}
+.chevron {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.hero-text{
+    position:absolute;
+    height:600px;
+    width:100%;
+    top:105%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+    /* transform: translateY(-300%); */
+    /* height:20vh; */
+    /* bottom:200%; */
+    /* left:50%;
+    top:50%;
+    transform:translate(-50%,-50%); */
+    word-wrap: break-word;
+    /* background-color:rgba(0, 0, 0, 0.1); */
+    /* opacity:0.4; */
 }
 
 .blue-container {

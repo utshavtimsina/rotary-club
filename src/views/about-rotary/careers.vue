@@ -1,20 +1,20 @@
 <template>
   <div class="text-center">
-    <v-card tile class="structure">
+    <v-card  class="structure">
       <v-container class="my-12">
         <v-layout column>
           <p class="display-3 my-auto white--text text-center">Careers at Rotary</p>
         </v-layout>
       </v-container>
     </v-card>
-    <v-card tile flat class="mt-12 mr-6">
+    <v-flex md12 class="mx-auto">
       <p class="pt-4">
         <a
           href="http://teamsites.rotaryintl.org/sites/TeamSites/E-LearningCentral/Documents/Open%20Positions-Internal.aspx"
           target="_blank"
         >Rotary employees, click here to apply</a>
       </p>
-      <div style="width:700px;display:inline-block;text-align:left">
+      <v-flex md10 sm12 xs12 class="mx-auto">
         <p>
           Rotary International World Headquarters, in Evanston, Illinois, USA, seeks qualified,
           customer-centered applicants who thrive in a team-oriented environment.
@@ -317,8 +317,8 @@
             </tr>
           </table>
         </div>
-      </div>
-    </v-card>
+      </v-flex>
+    </v-flex>
   </div>
 </template>
 

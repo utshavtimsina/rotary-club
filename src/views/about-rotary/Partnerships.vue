@@ -3,21 +3,19 @@
           <v-card flat  class="structure" >
           <v-container style="text-align: center;vertical-align: middle;">
               <v-layout column  > 
-                  <p class="display-3 white--text text-center" style="margin:5% 0%;">
+                  <p class="display-3 white--text text-center mx-auto" style="position:absolute;left:50%;top:50%; transform: translate(-50%,-50%);">
                     Partnerships
                   </p>
               </v-layout>
           </v-container>
       </v-card>
-    <div style="margin:6% 20%;">
+        <v-flex sm12 md10 class="mx-auto mt-10">
       <h1 class="font-weight-light my-5">
               When you partner with Rotary, our 1.2 million members amplify your impact, elevate your brand, advance important causes, improve communities, and gain access to global connections.
           </h1>
-      </div>
+      </v-flex>
        <div class="images">
-            <v-container>
-
-            
+           <v-flex md10 sm12 xs12 class="mx-auto">
             <v-layout row>
                     <v-flex sm6 md4>
                     <v-hover v-slot:default="{hover}">
@@ -113,31 +111,32 @@
                     </v-hover>
                 </v-flex>
             </v-layout>
-            </v-container>
+            </v-flex>
         </div>
-         <v-card flat  class="structure" >
-          <v-container style="text-align: center;vertical-align: middle;">
-              <v-layout>
-                  <v-flex md6 class=" pa-2" style="border-right:1px solid white;">
-                     <h1 class="text-center white--text font-weight-light">
+         <v-card flat  class="structure" style="height:100%; width:100%;" >
+             <v-flex md10 class="mx-auto" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+              <v-layout column style="height:100%; width:100%;" >
+                  <v-flex class=" pa-2 ">
+                     <p class="text-center white--text font-weight-light">
                          Are you an organization looking to explore a relationship with Rotary?
-                     </h1>
-                     <v-btn outlined class="my-9" dark style="padding:0% 20%">
+                     </p>
+                     <v-btn outlined class="my-9 " dark style="margin-left:20%;padding:0% 20%">
                          Get Started
                      </v-btn>
                   </v-flex>
-                  <v-flex md6 class=" pa-2"> 
-                      <h1 class="text-center white--text font-weight-light">
+                  <v-flex  class=" pa-2"> 
+                      <p class="text-center white--text font-weight-light">
                          Are you a Rotary club looking for a partner for a service project?
-                     </h1> 
-                      <v-btn outlined class="my-9" dark style="padding:0% 20%">
+                     </p> 
+                      <v-btn outlined class="my-9" dark style="margin-left:20%;padding:0% 20%">
                          Learn More
                      </v-btn>
                   </v-flex>
               </v-layout>
-          </v-container>
+           </v-flex>
          </v-card>
-        <div style="margin:6% 20%;">
+         <v-flex md10 sm12 xs12 class="mx-auto">
+          
             <h1>
                  How you can work with us
              </h1>
@@ -207,33 +206,31 @@
                 <v-btn class="primary  " style="margin:0% 40%; padding:3% 5%;">
                     Get Started
                 </v-btn>
-         </div>
-         <v-card flat  class="structure" style="height: 100%;" >
-            <v-container>
-                <v-layout row  >
+        </v-flex>
+         <v-card flat   style="height:100%; position:relative; overflow:hidden;" class="structure mt-9" >
+                <v-layout row style="postion:absolute;" class="mx-auto" >
                     <v-flex></v-flex>
-                    <v-flex >
-                        <img src="https://www.rotary.org/sites/default/files/styles/w_400/public/Proof-Charity-Navigator_EN.png?itok=aZEU0eYY 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/Proof-Charity-Navigator_EN.png?itok=Gx7gMrsh 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/Proof-Charity-Navigator_EN.png?itok=iZZ5haB6 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/Proof-Charity-Navigator_EN.png?itok=cIFSxRo5 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/Proof-Charity-Navigator_EN.png?itok=II_kVrsB 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/Proof-Charity-Navigator_EN.png?itok=B_PZpqJe 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/Proof-Charity-Navigator_EN.png?itok=xsN7Et7w 1600w, https://www.rotary.org/sites/default/files/styles/w_1800/public/Proof-Charity-Navigator_EN.png?itok=3HdMwtqu 1800w, https://www.rotary.org/sites/default/files/styles/w_2000/public/Proof-Charity-Navigator_EN.png?itok=5jUQz08z 2000w, https://www.rotary.org/sites/default/files/styles/w_2200/public/Proof-Charity-Navigator_EN.png?itok=4ox-aemj 2200w, https://www.rotary.org/sites/default/files/styles/w_2400/public/Proof-Charity-Navigator_EN.png?itok=qTDxJeXL 2400w" alt="">
+                    <v-flex  md2 sm6 xs6 >
+                        <img  width="100%" src="https://www.rotary.org/sites/default/files/styles/w_400/public/Proof-Charity-Navigator_EN.png?itok=aZEU0eYY 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/Proof-Charity-Navigator_EN.png?itok=Gx7gMrsh 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/Proof-Charity-Navigator_EN.png?itok=iZZ5haB6 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/Proof-Charity-Navigator_EN.png?itok=cIFSxRo5 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/Proof-Charity-Navigator_EN.png?itok=II_kVrsB 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/Proof-Charity-Navigator_EN.png?itok=B_PZpqJe 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/Proof-Charity-Navigator_EN.png?itok=xsN7Et7w 1600w, https://www.rotary.org/sites/default/files/styles/w_1800/public/Proof-Charity-Navigator_EN.png?itok=3HdMwtqu 1800w, https://www.rotary.org/sites/default/files/styles/w_2000/public/Proof-Charity-Navigator_EN.png?itok=5jUQz08z 2000w, https://www.rotary.org/sites/default/files/styles/w_2200/public/Proof-Charity-Navigator_EN.png?itok=4ox-aemj 2200w, https://www.rotary.org/sites/default/files/styles/w_2400/public/Proof-Charity-Navigator_EN.png?itok=qTDxJeXL 2400w" alt="">
                     </v-flex>
-                    <v-flex >
-                        <img src="https://www.rotary.org/sites/default/files/styles/w_400/public/TRF-percentage-spent_EN.png?itok=EJ4Z56zV 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/TRF-percentage-spent_EN.png?itok=iKCWs_la 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/TRF-percentage-spent_EN.png?itok=85HV2IL6 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/TRF-percentage-spent_EN.png?itok=su9JWIUx 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/TRF-percentage-spent_EN.png?itok=HEyTuU49 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/TRF-percentage-spent_EN.png?itok=c4abt5VY 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/TRF-percentage-spent_EN.png?itok=OfuC3la4 1600w, https://www.rotary.org/sites/default/files/styles/w_1800/public/TRF-percentage-spent_EN.png?itok=t5xa1MHn 1800w, https://www.rotary.org/sites/default/files/styles/w_2000/public/TRF-percentage-spent_EN.png?itok=SInygBI6 2000w, https://www.rotary.org/sites/default/files/styles/w_2200/public/TRF-percentage-spent_EN.png?itok=cKJ-70oP 2200w, https://www.rotary.org/sites/default/files/styles/w_2400/public/TRF-percentage-spent_EN.png?itok=oBSBw8co 2400w" alt="">
+                    <v-flex md2 sm6 xs6  >
+                        <img  width="100%" src="https://www.rotary.org/sites/default/files/styles/w_400/public/TRF-percentage-spent_EN.png?itok=EJ4Z56zV 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/TRF-percentage-spent_EN.png?itok=iKCWs_la 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/TRF-percentage-spent_EN.png?itok=85HV2IL6 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/TRF-percentage-spent_EN.png?itok=su9JWIUx 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/TRF-percentage-spent_EN.png?itok=HEyTuU49 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/TRF-percentage-spent_EN.png?itok=c4abt5VY 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/TRF-percentage-spent_EN.png?itok=OfuC3la4 1600w, https://www.rotary.org/sites/default/files/styles/w_1800/public/TRF-percentage-spent_EN.png?itok=t5xa1MHn 1800w, https://www.rotary.org/sites/default/files/styles/w_2000/public/TRF-percentage-spent_EN.png?itok=SInygBI6 2000w, https://www.rotary.org/sites/default/files/styles/w_2200/public/TRF-percentage-spent_EN.png?itok=cKJ-70oP 2200w, https://www.rotary.org/sites/default/files/styles/w_2400/public/TRF-percentage-spent_EN.png?itok=oBSBw8co 2400w" alt="">
                     </v-flex>
-                    <v-flex></v-flex>
+                     <v-flex></v-flex>
                 </v-layout>
-                    <v-layout row  >
-                    <v-flex md4>
-                        <img src="https://www.rotary.org/sites/default/files/styles/w_400/public/Partners-CNBC_EN.png?itok=STOguONz 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/Partners-CNBC_EN.png?itok=f8vhZzGz 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/Partners-CNBC_EN.png?itok=ydNK1HgF 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/Partners-CNBC_EN.png?itok=BItB18wW 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/Partners-CNBC_EN.png?itok=9RJdPX72 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/Partners-CNBC_EN.png?itok=t5tLOHPO 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/Partners-CNBC_EN.png?itok=z-SrOiMh 1600w, https://www.rotary.org/sites/default/files/styles/w_1800/public/Partners-CNBC_EN.png?itok=bSDcrrMt 1800w, https://www.rotary.org/sites/default/files/styles/w_2000/public/Partners-CNBC_EN.png?itok=Xd4uNUIA 2000w, https://www.rotary.org/sites/default/files/styles/w_2200/public/Partners-CNBC_EN.png?itok=c49W9VhR 2200w, https://www.rotary.org/sites/default/files/styles/w_2400/public/Partners-CNBC_EN.png?itok=EwLRQyTs 2400w" alt="">
+                    <v-layout row class="mx-auto" style="postion:absolute; ">
+                    <v-flex md4 sm4 xs4 >
+                        <img width="100%" src="https://www.rotary.org/sites/default/files/styles/w_400/public/Partners-CNBC_EN.png?itok=STOguONz 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/Partners-CNBC_EN.png?itok=f8vhZzGz 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/Partners-CNBC_EN.png?itok=ydNK1HgF 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/Partners-CNBC_EN.png?itok=BItB18wW 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/Partners-CNBC_EN.png?itok=9RJdPX72 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/Partners-CNBC_EN.png?itok=t5tLOHPO 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/Partners-CNBC_EN.png?itok=z-SrOiMh 1600w, https://www.rotary.org/sites/default/files/styles/w_1800/public/Partners-CNBC_EN.png?itok=bSDcrrMt 1800w, https://www.rotary.org/sites/default/files/styles/w_2000/public/Partners-CNBC_EN.png?itok=Xd4uNUIA 2000w, https://www.rotary.org/sites/default/files/styles/w_2200/public/Partners-CNBC_EN.png?itok=c49W9VhR 2200w, https://www.rotary.org/sites/default/files/styles/w_2400/public/Partners-CNBC_EN.png?itok=EwLRQyTs 2400w" alt="">
                     </v-flex>
-                    <v-flex md4>
-                        <img src="https://www.rotary.org/sites/default/files/styles/w_400/public/Partners-CharityWatch.png?itok=JqJMxGdx 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/Partners-CharityWatch.png?itok=KSjeCYCd 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/Partners-CharityWatch.png?itok=wdTrXgmi 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/Partners-CharityWatch.png?itok=iTgYxZF_ 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/Partners-CharityWatch.png?itok=1IWR4EDp 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/Partners-CharityWatch.png?itok=xNaSYgxw 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/Partners-CharityWatch.png?itok=_5s6gEbH 1600w, https://www.rotary.org/sites/default/files/styles/w_1800/public/Partners-CharityWatch.png?itok=4yECFqao 1800w, https://www.rotary.org/sites/default/files/styles/w_2000/public/Partners-CharityWatch.png?itok=JvrEisaF 2000w, https://www.rotary.org/sites/default/files/styles/w_2200/public/Partners-CharityWatch.png?itok=7__xoeWH 2200w, https://www.rotary.org/sites/default/files/styles/w_2400/public/Partners-CharityWatch.png?itok=4HbOvuXV 2400w" alt="">
+                    <v-flex md4 sm4 xs4>
+                        <img width="100%" src="https://www.rotary.org/sites/default/files/styles/w_400/public/Partners-CharityWatch.png?itok=JqJMxGdx 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/Partners-CharityWatch.png?itok=KSjeCYCd 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/Partners-CharityWatch.png?itok=wdTrXgmi 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/Partners-CharityWatch.png?itok=iTgYxZF_ 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/Partners-CharityWatch.png?itok=1IWR4EDp 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/Partners-CharityWatch.png?itok=xNaSYgxw 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/Partners-CharityWatch.png?itok=_5s6gEbH 1600w, https://www.rotary.org/sites/default/files/styles/w_1800/public/Partners-CharityWatch.png?itok=4yECFqao 1800w, https://www.rotary.org/sites/default/files/styles/w_2000/public/Partners-CharityWatch.png?itok=JvrEisaF 2000w, https://www.rotary.org/sites/default/files/styles/w_2200/public/Partners-CharityWatch.png?itok=7__xoeWH 2200w, https://www.rotary.org/sites/default/files/styles/w_2400/public/Partners-CharityWatch.png?itok=4HbOvuXV 2400w" alt="">
                     </v-flex>
-                    <v-flex md4>
-                        <img src="https://www.rotary.org/sites/default/files/styles/w_400/public/Partners-BBB_EN.png?itok=-CbhPRga 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/Partners-BBB_EN.png?itok=NE_gxpXT 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/Partners-BBB_EN.png?itok=7Q8303pr 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/Partners-BBB_EN.png?itok=gO3Z6HSp 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/Partners-BBB_EN.png?itok=0kYWI2GE 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/Partners-BBB_EN.png?itok=-OC63CGc 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/Partners-BBB_EN.png?itok=AMv1-mxN 1600w, https://www.rotary.org/sites/default/files/styles/w_1800/public/Partners-BBB_EN.png?itok=N8kOJ9VF 1800w, https://www.rotary.org/sites/default/files/styles/w_2000/public/Partners-BBB_EN.png?itok=XkczrsIl 2000w, https://www.rotary.org/sites/default/files/styles/w_2200/public/Partners-BBB_EN.png?itok=ZSlDOiPD 2200w, https://www.rotary.org/sites/default/files/styles/w_2400/public/Partners-BBB_EN.png?itok=Rhc01p2L 2400w" alt="">
+                    <v-flex md4 sm4 xs4>
+                        <img width="100%" src="https://www.rotary.org/sites/default/files/styles/w_400/public/Partners-BBB_EN.png?itok=-CbhPRga 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/Partners-BBB_EN.png?itok=NE_gxpXT 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/Partners-BBB_EN.png?itok=7Q8303pr 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/Partners-BBB_EN.png?itok=gO3Z6HSp 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/Partners-BBB_EN.png?itok=0kYWI2GE 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/Partners-BBB_EN.png?itok=-OC63CGc 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/Partners-BBB_EN.png?itok=AMv1-mxN 1600w, https://www.rotary.org/sites/default/files/styles/w_1800/public/Partners-BBB_EN.png?itok=N8kOJ9VF 1800w, https://www.rotary.org/sites/default/files/styles/w_2000/public/Partners-BBB_EN.png?itok=XkczrsIl 2000w, https://www.rotary.org/sites/default/files/styles/w_2200/public/Partners-BBB_EN.png?itok=ZSlDOiPD 2200w, https://www.rotary.org/sites/default/files/styles/w_2400/public/Partners-BBB_EN.png?itok=Rhc01p2L 2400w" alt="">
                     </v-flex>
                 </v-layout>
-            </v-container>
         </v-card>
-        <div style="margin:6% 20%;">
+        <v-flex  md10 xs12 sm12 class="mx-auto">
             <h1>
                 Our current partners
             </h1>
@@ -348,7 +345,7 @@
                 <li class="pa-3  title font-weight-light">Fondation Coup de Cœur</li>
                 <li class="pa-3  title font-weight-light">Goodeve Foundation</li>
             </ul>
-        </div>
+        </v-flex>
         <pagefooter/>
   </div>
 </template>
@@ -367,10 +364,11 @@ export default {
     background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/geo-darkblue.png);
     width: 100%;
     padding: 5% 3%;
-    height: 400px;
+    position: relative;
+    min-height:400px ;
+    max-height: 600px;
 }
 .images{
-    padding: 5% 15%;
   background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/concrete_seamless.jpg) 50% 0;
 }
 </style>

@@ -154,7 +154,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .structure {
   background-image: url(https://www.rotary.org/sites/default/files/styles/w_2800/public/new%20gen%20hero%202800x1800.jpg?itok=1wSlirgh);
   background-attachment: fixed;

@@ -1,8 +1,8 @@
 <template>
   <div style="text-align:center;margin-top:56px">
-    <v-card class="white--text blue-bar pa-12" flat tile>
-      <v-container style="width:70%">
-        <p class="display-3 font-weight-light mb-4">Join Rotary</p>
+    <v-card class="white--text blue-bar mt-6" flat tile>
+      <v-flex md10 class="mx-auto">
+        <p class="display-3 font-weight-light mb-4 mt-9">Join Rotary</p>
         <p class="headline font-weight-light mb-8">
           Rotary is 1.2 million passionate individuals in 35,000+ clubs worldwide. We are both an
           international organization and a local community leader. Together we lead change in our own
@@ -75,10 +75,10 @@
             </p>
           </div>
         </div>
-      </v-container>
+      </v-flex>
     </v-card>
     <v-card>
-      <v-container style="width:60%">
+      <v-flex md10 class="mx-auto">
         <div class="mt-12">
           <h3 class="title">HOW OUR MEMBERSHIP WORKS</h3>
           <p class="text-left title font-weight-light mt-4">
@@ -123,7 +123,9 @@
           <br />
           <v-btn color="#c10042" width="60%" height="50px" class="white--text">LEARN MORE</v-btn>
         </div>
-      </v-container>
+      
+    
+      </v-flex>
     </v-card>
     <v-img
       src="https://www.rotary.org/sites/default/files/styles/w_2800/public/join-tall%2Cw_1400-%402x.jpg?itok=eyS4nFP7 2800w"
@@ -132,7 +134,7 @@
     <v-card class="mt-12 mb-12" tile flat>
       <v-layout row>
           <v-flex></v-flex>
-        <v-flex md5  style="border:8px solid #bfbeba" class="mr-4">
+        <v-flex md5 sm12 style="border:8px solid #bfbeba" class="mr-4">
           <div style="height:50%" class="my-auto ma-12 text-left">
             <p
               class="title font-weight-bold mt-12 mb-12"
@@ -151,7 +153,7 @@
             >Did you move? Has your schedule changed? We can help you rejoin your existing or find a new club that better fits your location and schedule.</p>
           </div>
         </v-flex>
-        <v-flex md5 style="width:100%" class="ml-4">
+        <v-flex md5 sm12 style="width:100%" class="ml-4">
           <div>
             <v-img
               src="https://www.rotary.org/sites/default/files/styles/w_1500/public/youthblockphoto.jpg?itok=pOi6czYR"

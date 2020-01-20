@@ -1,13 +1,18 @@
 <template>
   <div>
     <v-card flat class="structure">
-      <v-container style="text-align: center;">
-        <v-layout column>
-          <p class="display-3 my-8 white--text text-center">Rotary Clubs</p>
-        </v-layout>
-      </v-container>
+        
+        <div class="hero-text">
+        <p
+          class="display-3  white--text text-center"
+        >
+         Rotary Clubs
+          <br />
+          <v-icon color="white" size="60px" class="chevron">mdi-chevron-down</v-icon>
+        </p>
+      </div>
     </v-card>
-    <div style="margin:0% 20%;">
+    <v-flex md10 class="mx-auto mt-9">
       <p
         style="margin:10% 0%;"
         class="pa-3 display-1 font-weight-light"
@@ -15,9 +20,9 @@
       <p
         class="py-3 title font-weight-light"
       >Rotary members share ideas, make plans, hear from the community, and catch up with friends during club programs that fuel the impact we make.</p>
-    </div>
+    </v-flex>
     <div class="images my-0">
-      <div style="margin:0% 20%;">
+      <v-flex md10 class="mx-auto mt-9">
         <v-container>
           <v-layout row>
             <v-flex sm6 md4>
@@ -186,13 +191,13 @@
         <p class="pa-3 title font-weight-light">Download Open World hosting themes</p>
         <p class="pa-3 title font-weight-light">Download the Open World program brochure</p>
         <p class="pa-3 title font-weight-light">Email us with questions?</p>
-      </div>
+      </v-flex>
     </div>
-    <div style="margin:0% 20%;">
+    <v-flex md10 class="mx-auto mt-9">
     <v-card flat >
       <v-container class="mstructure" style="text-align: center;vertical-align: middle;">
-        <v-layout>
-          <v-flex md6 class="pa-2" style="border-right:1px solid white;">
+        <v-layout column>
+          <v-flex md6 class="pa-2" style="border-bottom:1px solid white;">
             <h1
               class="text-center white--text font-weight-light"
             >Refer potential members, and we’ll help connect them to the right club. Only current members can refer new members. To refer someone to your own club, contact your club secretary.</h1>
@@ -252,7 +257,7 @@
         </v-layout>
       </v-container>
     </v-card>
-    </div>
+    </v-flex>
     <pagefooter />
   </div>
 </template>
@@ -299,6 +304,36 @@ export default {
   background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/geo-purple.png);
   width: 100%;
   padding: 5% 3%;
+}
+.chevron {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.hero-text{
+    position:absolute;
+    height:600px;
+    width:100%;
+    top:105%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+    /* transform: translateY(-300%); */
+    /* height:20vh; */
+    /* bottom:200%; */
+    /* left:50%;
+    top:50%;
+    transform:translate(-50%,-50%); */
+    word-wrap: break-word;
+    /* background-color:rgba(0, 0, 0, 0.1); */
+    /* opacity:0.4; */
 }
 .structure {
   background-image: url(https://www.rotary.org/sites/default/files/styles/w_2800/public/GI%20clubs%20hero%202800x1800.jpg?itok=Zwrbc6_f);

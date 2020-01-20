@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="app">
     <Navbar/>
     <v-content>
       <router-view></router-view>
@@ -21,7 +21,16 @@ export default {
   }),
 };
 </script>
-<style>
+<style >
+.app{
+ 
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+ 
+}
 a:hover {
   background-color: #ccf1ff;
 }

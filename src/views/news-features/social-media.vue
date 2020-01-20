@@ -212,7 +212,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .main-div {
   margin-top: 56px;
   text-align: center;

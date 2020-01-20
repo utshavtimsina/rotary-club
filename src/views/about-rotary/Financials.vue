@@ -12,7 +12,7 @@
               </v-layout>
           </v-container>
       </v-card>
-      <div style="margin:6% 20%;">
+       <v-flex md10 xs12 sm12 class="mx-auto">
       <h1 class="font-weight-light my-5">
             As a global organization that operates in nearly every country in the world and deals in 29 currencies, Rotary takes stewardship of its funds seriously.
         </h1>
@@ -39,21 +39,16 @@
             Rotary International and The Rotary Foundation of Rotary International are separate entities with distinct reporting requirements. Under United States tax law, they are both tax-exempt organizations.
 
         </p>
-      </div>
+     </v-flex>
         <v-card flat  class="structure" >
-            <v-container>
-                <v-layout >
-                    <v-flex md2>
-
-                    </v-flex>
-                    <v-flex md4>
+                <v-layout row>
+                    <v-flex md6 xs12 sm12 class="mx-auto">
                         <img src="https://www.rotary.org/sites/default/files/styles/w_400/public/Proof-Charity-Navigator_EN.png?itok=aZEU0eYY 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/Proof-Charity-Navigator_EN.png?itok=Gx7gMrsh 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/Proof-Charity-Navigator_EN.png?itok=iZZ5haB6 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/Proof-Charity-Navigator_EN.png?itok=cIFSxRo5 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/Proof-Charity-Navigator_EN.png?itok=II_kVrsB 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/Proof-Charity-Navigator_EN.png?itok=B_PZpqJe 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/Proof-Charity-Navigator_EN.png?itok=xsN7Et7w 1600w, https://www.rotary.org/sites/default/files/styles/w_1800/public/Proof-Charity-Navigator_EN.png?itok=3HdMwtqu 1800w, https://www.rotary.org/sites/default/files/styles/w_2000/public/Proof-Charity-Navigator_EN.png?itok=5jUQz08z 2000w, https://www.rotary.org/sites/default/files/styles/w_2200/public/Proof-Charity-Navigator_EN.png?itok=4ox-aemj 2200w, https://www.rotary.org/sites/default/files/styles/w_2400/public/Proof-Charity-Navigator_EN.png?itok=qTDxJeXL 2400w" alt="">
                     </v-flex>
-                    <v-flex>
+                    <v-flex md6 xs12 sm12 class="mx-auto">
                         <img src="https://www.rotary.org/sites/default/files/styles/w_400/public/TRF-percentage-spent_EN.png?itok=EJ4Z56zV 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/TRF-percentage-spent_EN.png?itok=iKCWs_la 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/TRF-percentage-spent_EN.png?itok=85HV2IL6 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/TRF-percentage-spent_EN.png?itok=su9JWIUx 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/TRF-percentage-spent_EN.png?itok=HEyTuU49 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/TRF-percentage-spent_EN.png?itok=c4abt5VY 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/TRF-percentage-spent_EN.png?itok=OfuC3la4 1600w, https://www.rotary.org/sites/default/files/styles/w_1800/public/TRF-percentage-spent_EN.png?itok=t5xa1MHn 1800w, https://www.rotary.org/sites/default/files/styles/w_2000/public/TRF-percentage-spent_EN.png?itok=SInygBI6 2000w, https://www.rotary.org/sites/default/files/styles/w_2200/public/TRF-percentage-spent_EN.png?itok=cKJ-70oP 2200w, https://www.rotary.org/sites/default/files/styles/w_2400/public/TRF-percentage-spent_EN.png?itok=oBSBw8co 2400w" alt="">
                     </v-flex>
                 </v-layout>
-            </v-container>
         </v-card>
 
         <v-container class="my-10" >

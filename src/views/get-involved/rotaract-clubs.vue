@@ -1,20 +1,23 @@
 <template>
   <div>
     <v-card flat class="structure">
-      <v-container style="text-align: center;">
-        <v-layout column>
-          <p class="display-3 white--text text-center" style="position: absolute;bottom:10%;left:50%;transform:translate(-50%,-50%)">
-    Rotaract Clubs</p>
-        </v-layout>
-      </v-container>
+     <div class="hero-text">
+        <p
+          class="display-3  white--text text-center"
+        >
+         Rotaract Clubs
+          <br />
+          <v-icon color="white" size="60px" class="chevron">mdi-chevron-down</v-icon>
+        </p>
+      </div>
     </v-card>
     <v-card class="text-center" flat>
-      <v-flex md6 class="mx-auto pt-12 display-1">
+      <v-flex md6 class="mx-auto mt-12 display-1">
         <p>Join the global movement of young leaders who are developing innovative solutions to the world’s most pressing challenges.</p>
       </v-flex>
-      <v-layout row align-center>
+      <v-layout row  >
         <v-flex></v-flex>
-        <v-flex md5 class="text-left mx-auto">
+        <v-flex md5 sm12 xs12 class="mx-5">
           <p
             class="title font-weight-light"
           >Rotaract clubs bring together people ages 18-30 to exchange ideas with leaders in the community, develop leadership and professional skills, and have fun through service.</p>
@@ -22,7 +25,7 @@
             class="title font-weight-light"
           >In communities worldwide, Rotary and Rotaract members work side by side to take action through service. From big cities to rural villages, Rotaract is changing communities like yours.</p>
         </v-flex>
-        <v-flex md3>
+        <v-flex md3 sm6 xs6>
           <div style="color:#872175">
             <p class="title font-weight-light">10,904</p>
             <p class="title font-weight-light">Rotaract clubs</p>
@@ -32,13 +35,13 @@
       </v-layout>
       <v-layout row align-center>
         <v-flex></v-flex>
-        <v-flex md5 class="text-left mx-auto">
+        <v-flex md5 sm12 class=" mx-2">
           <h1>What’s involved?</h1>
           <p
             class="title font-weight-light"
           >Rotaract members decide how to organize and run their clubs, manage their own funds, and plan and carry out activities and service projects. Rotary club sponsors offer guidance and support and work with your club as partners in service.</p>
         </v-flex>
-        <v-flex md3>
+        <v-flex md3 sm6>
           <div style="color:#018d8d" class="title font-weight-light">
             <p>250,792</p>
             <p>Rotaractors</p>
@@ -47,9 +50,9 @@
         <v-flex></v-flex>
       </v-layout>
 
-      <v-layout row align-center>
+      <v-layout row  >
         <v-flex></v-flex>
-        <v-flex md5 class="text-left mx-auto">
+        <v-flex md5 class="  mx-2">
           <h1>How do I join?</h1>
           <p class="title font-weight-light">
             Check with your university or
@@ -64,10 +67,10 @@
         </v-flex>
         <v-flex></v-flex>
       </v-layout>
-      <div>
+      <v-flex md5 class="mx-auto">
         <v-carousel
-          style="width:26%; border:1px solid #e3dfde"
-          class="mx-auto my-12"
+          style="width:100%; border:1px solid #e3dfde"
+           
           hide-delimiters
           height="100%"
         >
@@ -86,7 +89,7 @@
             </v-sheet>
           </v-carousel-item>
         </v-carousel>
-      </div>
+      </v-flex>
       <hr style="width:40%;display:inline-block" />
       <div>
         <h1 class="mt-8">Already involved in Rotaract?</h1>
@@ -96,7 +99,7 @@
         </p>
       </div>
       <hr style="width:50%;display:inline-block" />
-      <div style="width:50%" class="mx-auto">
+      <div style="width:100%" class="mx-auto">
         <v-container>
           <v-layout row>
             <!-- <v-flex></v-flex> -->
@@ -186,7 +189,37 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.chevron {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.hero-text{
+    position:absolute;
+    height:600px;
+    width:100%;
+    top:105%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+    /* transform: translateY(-300%); */
+    /* height:20vh; */
+    /* bottom:200%; */
+    /* left:50%;
+    top:50%;
+    transform:translate(-50%,-50%); */
+    word-wrap: break-word;
+    /* background-color:rgba(0, 0, 0, 0.1); */
+    /* opacity:0.4; */
+}
 .structure {
   background-image: url(https://www.rotary.org/sites/default/files/styles/w_2800/public/GI%20rotaract%20hero%202800x1800.jpg?itok=5HiLYP9D);
   background-attachment: fixed;

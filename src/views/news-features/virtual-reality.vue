@@ -2,10 +2,11 @@
   <div 
   style="background:white;margin-top:56px;" 
   class="text-center">
-  <div id="video-div">
-      <video autoplay loop muted class="hero-video" 
+  <div id="video-div" style="position:relative;">
+      <video  width="100%" autoplay loop muted class="hero-video" 
       >
-        <source
+        <source 
+          
           src="https://www.rotary.org/sites/default/files/2018_075_TwoDropsofPatience_ambient.mp4"
           type="video/mp4"
         />
@@ -23,7 +24,7 @@
     <div class="page-content mt-12">
       <v-container>
       <v-flex md8 class="mx-auto">
-        <div style="border-top:1px solid black;border-bottom:1px solid black" class="pa-8">
+        <div style="border-top:1px solid black;border-bottom:1px solid black" class="px-8">
           <h1
             class="font-weight-regular"
           >Rotary is harnessing the immersive power of virtual reality to create a more connected, stronger world.</h1>
@@ -229,7 +230,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 
 .chevron {
   animation: bounce 0.8s;
@@ -252,7 +253,7 @@ export default {
     position:absolute;
     height:150px;
     width:100%;
-    top:15%;
+    top:75%;
     left:50%;
     transform:translate(-50%,-50%); 
     /* transform: translateY(-300%); */

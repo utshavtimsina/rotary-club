@@ -11,15 +11,15 @@
           </v-container>
       </v-card>
       
-      <div style="margin:5% 20%;">
+        <v-flex md10 class="mx-auto"> 
         <h1 class="font-weight-light my-5">
             Rotary is made up of three parts: our clubs, Rotary International, and The Rotary Foundation. Together, we work to make lasting change in our communities and around the world.
             
         </h1>
         
-      </div>
+        </v-flex>
         <div class="images">
-            <v-container>
+           <v-flex md10 class="mx-auto">
 
             
             <v-layout row>
@@ -117,7 +117,7 @@
                     </v-hover>
                 </v-flex>
             </v-layout>
-            </v-container>
+             </v-flex>
         </div>
         <v-container>
             <v-layout column>
@@ -175,7 +175,7 @@ export default {
     height: 400px;
 }
 .images{
-    padding: 5% 15%;
+   
   background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/concrete_seamless.jpg) 50% 0;
 }
 </style>

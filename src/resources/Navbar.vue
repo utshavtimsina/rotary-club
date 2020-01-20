@@ -1,12 +1,11 @@
 <template>
-  <div class="navbar">
+  <div class="navbar" style="width:100%;position:relative;">
     <v-card raised>
-      <v-toolbar md12>
+      <v-toolbar >
         <v-spacer></v-spacer>
         <v-app-bar-nav-icon>
           <router-link to="/" flat>
             <v-img
-              contain
               src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/rotary-logo-color-2019-simplified.svg"
               max-width="8rem"
             ></v-img>
@@ -211,9 +210,13 @@
                       </router-link>
                     </v-list-item-title>
                   </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title class="caption"></v-list-item-title>
+                  </v-list-item>
                 </v-list>
               </div>
             </div>
+            <!-- Get involved -->
             <div style="display:inline-block;">
               <Span>Get Involved</Span>
               <div class="content caption">
@@ -335,6 +338,9 @@
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-title class="overline"></v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title class="caption"></v-list-item-title>
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-title class="caption"></v-list-item-title>
@@ -493,6 +499,181 @@
                   <v-list-item>
                     <v-list-item-title class="caption"></v-list-item-title>
                   </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title class="caption"></v-list-item-title>
+                  </v-list-item>
+                  
+                </v-list>
+              </div>
+            </div>
+            <!-- our programs -->
+            <div style="display:inline-block;">
+              <Span>Our Programs</Span>
+              <div class="content caption">
+                <v-list
+                  dense
+                  shaped
+                  color="grey lighten-4 text-wrap"
+                  style="max-width:15rem;text-transform: lowercase;"
+                >
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        <router-link to="/our-programs">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Overview
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                      </v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        <router-link to="/our-programs/youth-programs">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Youth programs
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                      </v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        <router-link to="/our-programs/rotary-youth-leadership-awards">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Rotary youth <br> leadership-awards
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                      </v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        <router-link to="/our-programs/youth-exchanges">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Youth exchanges
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                      </v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                    <v-list-item>
+                    <v-list-item-title class="caption">
+                      <router-link to="/our-programs/peace-fellowships">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Peace fellowships
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                    </v-list-item-title>
+                  </v-list-item>
+                    <v-list-item>
+                    <v-list-item-title class="caption">
+                          <router-link to="/our-programs/rotary-community-corps">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Rotary community corps
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                    </v-list-item-title>
+                  </v-list-item>
+                    <v-list-item>
+                    <v-list-item-title class="caption">
+                          <router-link to="/our-programs/grants">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>grants
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                    </v-list-item-title>
+                  </v-list-item>
+                    <v-list-item>
+                    <v-list-item-title class="caption">
+                          <router-link to="/our-programs/new-generations-service-exchange">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>new generations <br> service exchange
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                    </v-list-item-title>
+                  </v-list-item>
+                    <v-list-item>
+                    <v-list-item-title class="caption">
+                          <router-link to="/our-programs/scholarships">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>scholarships
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                    </v-list-item-title>
+                  </v-list-item>
+                     <v-list-item>
+                    <v-list-item-title class="caption">
+                          <router-link to="/our-programs/friendship-exchange">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon> friendship exchange
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                    </v-list-item-title>
+                  </v-list-item>
                 </v-list>
               </div>
             </div>
@@ -574,6 +755,24 @@
                       </v-list-item-title>
                     </v-list-item-content>
                   </v-list-item>
+                    <v-list-item>
+                    <v-list-item-title class="caption"></v-list-item-title>
+                  </v-list-item>
+                    <v-list-item>
+                    <v-list-item-title class="caption"></v-list-item-title>
+                  </v-list-item>
+                    <v-list-item>
+                    <v-list-item-title class="caption"></v-list-item-title>
+                  </v-list-item>
+                    <v-list-item>
+                    <v-list-item-title class="caption"></v-list-item-title>
+                  </v-list-item>
+                    <v-list-item>
+                    <v-list-item-title class="caption"></v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title class="caption"></v-list-item-title>
+                  </v-list-item>
                 </v-list>
               </div>
             </div>
@@ -592,7 +791,7 @@ export default {
         transition: "height 400ms",
         height: "55px",
         transitionHover: "height 1s",
-        heightHover: "470px"
+        heightHover: "500px"
       },
       hoverState: false
     };

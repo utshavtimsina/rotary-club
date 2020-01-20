@@ -13,7 +13,7 @@
               </v-layout>
           </v-container>
       </v-card>
-      <div style="margin:6% 20%;">
+      <v-flex md10 sm12 class="mx-auto mt-9">
           <p class="pa-3 title font-weight-light">
               Rotary is led by a diverse international team of top executives. Whether developing Rotary policy, providing financial support, managing a global staff, or advancing Rotary’s strategic plan, each member of the team is dedicated to helping our members connect and take action to create sustainable change.
           </p>
@@ -129,7 +129,8 @@
         Regional Rotary Foundation coordinators, Rotary coordinators, Rotary public image coordinators, and endowment/major gifts advisers connect Rotary members with the resources and assistance they need to succeed. Regional leaders are appointed by the Rotary International president-elect or Rotary Foundation trustee chair-elect.
         </p>
          <p class=" blue--text title font-weight-light">How regional leaders support Rotary members</p>
-      </div>
+     </v-flex>
+
       <pagefooter/>
   </div>
 </template>
@@ -148,6 +149,6 @@ export default {
     background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/geo-darkblue.png);
     width: 100%;
     padding: 5% 3%;
-    height: 400px;
+    height: 600px;
 }
 </style>

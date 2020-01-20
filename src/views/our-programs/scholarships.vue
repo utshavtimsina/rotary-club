@@ -150,7 +150,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scopedstyle="height:100%">
 .structure {
   background-image: url(https://www.rotary.org/sites/default/files/styles/w_2800/public/scholarship%20hero%202800x1800.jpg?itok=lJxJRJmR);
   background-attachment: fixed;

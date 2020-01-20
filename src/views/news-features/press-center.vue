@@ -160,7 +160,7 @@ components: {
 }
 </script>
 
-<style>
+<style scoped>
 .first-element {
   background: url("https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/geo-darkblue.png");
   height: 300px;

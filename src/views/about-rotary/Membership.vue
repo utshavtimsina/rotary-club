@@ -1,13 +1,13 @@
 <template>
   <div>
-    <span class="hero-background">
+    <v-card class="hero-background">
       <v-overlay absolute="absolute" :value="overlay" z-index="-1" opacity="0.2">
         <h1 class="display-3">Membership</h1>
       </v-overlay>
-    </span>
+    </v-card>
     <v-card style="z-index:1;" class="others" flat>
       <v-container>
-        <div style="margin-left:20%; margin-right:20% " class="pa-9">
+         <v-flex md10 class="mx-auto">
           <p
             class="display-1 font-weight-light my-5"
           >Impact starts with our members — people like you who see a world where people unite and take action to create lasting change — across the globe, in our communities, and in ourselves.</p>
@@ -26,7 +26,8 @@
             class="title font-weight-light my-5"
           >Clubs accept new members by invitation. To help us find the right club for you, we’ll ask you a few questions about yourself and your interests. Then we’ll share your answers with Rotary leaders in your community who will match you with a club.</p>
           <div class="text-center">
-            <img
+            <img 
+            width="100%"
               src="https://www.rotary.org/sites/default/files/styles/w_400/public/Progress-Tracker-Graphic_EN_0.png?itok=ctTceZVU 400w, https://www.rotary.org/sites/default/files/styles/w_600/public/Progress-Tracker-Graphic_EN_0.png?itok=k18qjhJa 600w, https://www.rotary.org/sites/default/files/styles/w_800/public/Progress-Tracker-Graphic_EN_0.png?itok=YfOxDp6C 800w, https://www.rotary.org/sites/default/files/styles/w_1000/public/Progress-Tracker-Graphic_EN_0.png?itok=3iun6ghH 1000w, https://www.rotary.org/sites/default/files/styles/w_1200/public/Progress-Tracker-Graphic_EN_0.png?itok=Rs0y8sK2 1200w, https://www.rotary.org/sites/default/files/styles/w_1400/public/Progress-Tracker-Graphic_EN_0.png?itok=_P5xnaNh 1400w, https://www.rotary.org/sites/default/files/styles/w_1600/public/Progress-Tracker-Graphic_EN_0.png?itok=wvj0WQ53 1600w"
               alt
             />
@@ -73,8 +74,8 @@
             class="title font-weight-light my-5"
           >If you’re between the ages of 12 and 30, you may be interested in joining one of our service clubs for young professionals and youth. Like Rotary clubs, Rotaract and Interact clubs give their members the chance to make friends, develop leadership skills, and create positive change. Learn more about Rotaract and Interact clubs.</p>
           <hr />
-          <v-layout class="my-9">
-            <v-flex md6>
+          <v-layout row class="my-9">
+            <v-flex md6 sm12>
               <h3 class="my-9">RELATED STORIES</h3>
               <img
                 src="https://www.rotary.org/sites/default/files/styles/w_300/public/DSC_3318_crop.jpg?itok=6-ESmQIl 300w, https://www.rotary.org/sites/default/files/styles/w_600/public/DSC_3318_crop.jpg?itok=klsTFbBq 600w"
@@ -82,7 +83,7 @@
               />
               <a href="#" style="display:block;" class="title font-weight-light my-5">Kansas City club brings community together</a>
             </v-flex>
-            <v-flex md6 >
+            <v-flex md6 sm12>
                 <a href="#" style="display:block;" class="title font-weight-light my-5"> Children with disabilities learn artisan craft</a>
                 <a href="#" style="display:block;" class="title font-weight-light my-5">Rotary club pairs students with celebrity mentors</a>
                 <a href="#" style="display:block;" class="title font-weight-light my-5">Australia clubs helping to end domestic violence</a>
@@ -91,7 +92,7 @@
                 <a href="#" style="display:block;" class="title font-weight-light my-5">Rotary clubs go wild for wildlife conservation</a>
             </v-flex>
           </v-layout>
-        </div>
+       </v-flex>
       </v-container>
     </v-card>
   </div>
@@ -110,14 +111,12 @@ export default {
 <style scoped>
 .hero-background {
   background-image: url(https://www.rotary.org/sites/default/files/styles/w_2800/public/new%20membership%20hero.jpg?itok=wyGjFvBL);
-  position: fixed;
+ background-attachment: fixed;
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   width: 100%;
-  height: 100%;
-  z-index: initial;
-  top: -5%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 5% 3%;
+  height: 600px;
 }
 .others {
   width: 100%;

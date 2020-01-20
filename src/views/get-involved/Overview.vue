@@ -1,20 +1,18 @@
 <template>
   <div>
     <v-card flat class="structure">
-      <v-container style="text-align: center;">
-        <v-layout column>
-          <p class="display-3 my-8 white--text text-center">Get Involved</p>
+        <v-layout  >
+          <p class="display-3   white--text text-center" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)">Get Involved</p>
         </v-layout>
-      </v-container>
     </v-card>
-    <div class="images my-0">
-      <div style="margin:0% 20%;">
+    <div class="images  ">
+     <v-flex md10 class="mx-auto">
         <p
-          style="margin:10% 0%;"
-          class="pa-3 display-1 font-weight-light"
+           
+          class="pa-3 mt-10 display-1 font-weight-light"
         >Join Rotary’s 1.2 million neighbors, friends, leaders, and problem-solvers who see a world where people unite and take action to create lasting change – across the globe, in our communities, and in ourselves.</p>
-      </div>
-      <div style="margin:0% 20%;">
+     </v-flex>
+      <v-flex md10 class="mx-auto">
         <v-container>
           <v-layout row>
             <v-flex sm6 md4>
@@ -168,9 +166,9 @@
         <p
           class="py-3 title font-weight-light"
         >Become one of Rotary’s people of action or explore the many opportunities we have for anyone — whatever your age or interest — who wants to improve lives in communities near and far. Connect with a local Rotary club to find out how you can get involved.</p>
-      </div>
+      </v-flex>
     </div>
-     <div style="margin:0% 20%;">
+    <v-flex md10 class="mx-auto">
         <v-container>
             <v-layout column>
              <v-btn 
@@ -201,7 +199,7 @@
             </v-layout>
              
         </v-container>
-    </div>
+    </v-flex>
     <pagefooter/>
   </div>
 </template>
@@ -223,7 +221,7 @@ export default {
   background-size: cover; /* Resize the background image to cover the entire container */
   width: 100%;
   padding: 5% 3%;
-  height: 400px;
+  height: 600px;
 }
 .images {
   background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/concrete_seamless.jpg);
