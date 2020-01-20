@@ -1,28 +1,32 @@
 <template>
   <div>
     <v-card flat class="structure">
-      <v-container style="text-align: center;">
-        <v-layout column style="position:absolute; bottom:0; left:40%;">
-          <p class="display-3 my-8 white--text text-center">Promoting Peace</p>
-        </v-layout>
-      </v-container>
+     <div class="hero-text">
+       <p
+          class="display-3  white--text text-center"
+        >
+         Promoting Peace
+          <br />
+          <v-icon color="white" size="60px" class="chevron">mdi-chevron-down</v-icon>
+        </p>
+    </div>
     </v-card>
-    <div style="margin:0% 20%;">
+    <v-flex md7 class="mx-auto">
       <p
         class="pa-3 display-1 font-weight-light"
       >Conflict and violence displaced more than 68 million people in the past year, and half of those are children.</p>
       <p
         class="pa-3 title font-weight-light"
       >We refuse to accept conflict as a way of life. Rotary projects provide training that fosters understanding and provides communities with the skills to resolve conflicts.</p>
-    </div>
+    </v-flex>
     <div class="images my-0">
-      <div style="margin:0% 20%;">
+      <v-flex md5 class="mx-auto">
         <h1 class="pa-3 display-1 text-center font-weight-light">HOW ROTARY MAKES HELP HAPPEN</h1>
         <p
           class="pa-3 title font-weight-light"
         >Through our service projects, peace fellowships, and scholarships, our members are taking action to address the underlying causes of conflict, including poverty, inequality, ethnic tension, lack of access to education, and unequal distribution of resources.</p>
         <v-carousel
-          style="width:60%; border:1px solid #e3dfde"
+          style="width:100%; border:1px solid #e3dfde"
           class="mx-auto"
           hide-delimiters
           height="100%"
@@ -30,7 +34,7 @@
           <v-carousel-item v-for="(item,i) in items" :key="i">
             <v-sheet height="100%" width="100%" color="white">
               <div>
-                <v-img width="100%" height="40%" :src="item.src"></v-img>
+                <v-img width="100%" height="50%" :src="item.src"></v-img>
               </div>
               <v-sheet :color="item.color" tile class="text-center pa-2">{{item.ribbon}}</v-sheet>
               <v-sheet
@@ -41,12 +45,11 @@
             </v-sheet>
           </v-carousel-item>
         </v-carousel>
-      </div>
+      </v-flex>
     </div>
     <div class="imagess">
-      <v-layout>
-        <v-flex></v-flex>
-        <v-flex class="pa-10">
+      <v-layout row>
+        <v-flex md4 class="mx-auto">
           <iframe
             width="560"
             height="315"
@@ -57,7 +60,7 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="margin:0% 20%;">
+    <v-flex md10 class="mx-auto">
       <v-container>
         <v-layout>
           <v-flex md6>
@@ -114,7 +117,7 @@
       </v-container>
       <img
         height="100%"
-        width="60%"
+        width="100%"
         src=" https://www.rotary.org/sites/default/files/styles/w_1600/public/5_peace%20alumniEN.jpg?itok=cHVx3Tyc 1600w"
         alt
       />
@@ -147,24 +150,25 @@
           </v-flex>
         </v-layout>
       </v-card>
-    </div>
+    </v-flex>
     <div style="margin:5% 0%;">
       <v-img
         height="100%"
+        width="100%"
         src=" https://www.rotary.org/sites/default/files/styles/w_2800/public/peace%20share%203.jpg?itok=0UkoPfHO 2800w"
       >
-        <v-sheet class="black white--text" style="position:absolute; top:30%; left:20%; ">
-          <p class="title pa-4">Spread the word about Rotary’s efforts to promote peace</p>
-          <v-icon class="pa-4 display-3 white--text">mdi-facebook-box</v-icon>
-          <v-icon class="pa-4 display-3 white--text">mdi-twitter</v-icon>
-          <hr class="ma-4" />
-          <p class="title pa-4">What can you do to promote peace?</p>
-          <v-btn class="pink white--text" height="50px" block>Support rotary peace center</v-btn>
-          <v-btn class="pink white--text my-2" height="50px" block>Learn more about peace fellowships</v-btn>
-        </v-sheet>
+        <div class="black white--text" style=" position:absolute; top:50%; left:50%;  transform: translate(-50%,-50%); ">
+          <p class=" mx-3  " style=" font-size : 2vw; ">Spread the word about Rotary’s efforts to promote peace</p>
+          <v-icon class=" mx-2 white--text" style=" font-size : 2vw;overflow: hidden;">mdi-facebook-box</v-icon>
+          <v-icon class="  mx-2 white--text" style=" font-size : 2vw;overflow: hidden;">mdi-twitter</v-icon>
+          <hr class="mx-4 my-1" />
+          <p class="mx-2   " style=" font-size : 2vw;overflow: hidden;">What can you do to promote peace?</p>
+          <v-btn   class="pink white--text" height="4vw"  block  >Support rotary peace center</v-btn>
+          <v-btn  class="pink white--text my-1 "  height="4vw"  block >Learn more about peace fellowships</v-btn>
+        </div>
       </v-img>
     </div>
-    <div style="margin:0% 20%;">
+    <v-flex  md10 class="mx-auto">
       <p
         class="py-3 display-2 font-weight-light"
       >I wanted to do something to help prevent war, rather than addressing its consequences.</p>
@@ -172,7 +176,7 @@
       <p
         class=" titlefont-weight-light"
       >Rotary Peace Fellow, University of Queensland, 2005-07</p>
-    </div>
+    </v-flex>
     <pagefooter />
   </div>
 </template>
@@ -229,5 +233,35 @@ export default {
 }
 .imagess {
   background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/geo-green.png);
+}
+.chevron {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.hero-text{
+    position:absolute;
+    height:600px;
+    width:100%;
+    top:105%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+    /* transform: translateY(-300%); */
+    /* height:20vh; */
+    /* bottom:200%; */
+    /* left:50%;
+    top:50%;
+    transform:translate(-50%,-50%); */
+    word-wrap: break-word;
+    /* background-color:rgba(0, 0, 0, 0.1); */
+    /* opacity:0.4; */
 }
 </style>

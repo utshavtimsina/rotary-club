@@ -1,22 +1,26 @@
 <template>
   <div>
     <v-card flat class="structure">
-      <v-container style="text-align: center;">
-        <v-layout column style="position:absolute; bottom:0; left:30%;">
-          <p class="display-3 my-8 white--text text-center">Disaster Response</p>
-        </v-layout>
-      </v-container>
+      <div class="hero-text">
+        <p
+          class="display-3  white--text text-center"
+        >
+         Disaster Response
+          <br />
+          <v-icon color="white" size="60px" class="chevron">mdi-chevron-down</v-icon>
+        </p>
+      </div>
     </v-card>
-    <div style="margin:0% 20%;">
+    <v-flex md7 class="mx-auto">
       <p
         class="pa-3 display-2 font-weight-light wf-active"
       >With more than 1.2 million members worldwide, Rotarians are on the ground and ready to take action to help communities recover when disasters strike.</p>
       <p
         class="pa-3 title font-weight-light"
       >Rotary members and The Rotary Foundation play a unique role in disaster recovery and rebuilding efforts. Working closely with our partner ShelterBox and other organizations that specialize in disaster relief, Rotary members lead projects to support every phase of a community's recovery.</p>
-    </div>
+    </v-flex>
     <div class="images my-0">
-      <div style="margin:0% 20%;">
+      <v-flex md5 class="mx-auto">
         <h1
           class="pa-3 display-1 text-center font-weight-light"
         >Rotary supports three phases of relief:</h1>
@@ -47,7 +51,7 @@
             </v-carousel-item>
           </v-carousel>-->
         </p>
-      </div>
+      </v-flex>
       <v-card flat class="imagess">
         <v-container style="text-align: center;vertical-align: middle;">
           <v-layout>
@@ -80,8 +84,7 @@
         </v-flex>
       </v-layout>
       <v-layout>
-        <v-flex></v-flex>
-        <v-flex class="pa-10">
+        <v-flex md4 class="mx-auto">
            
           <iframe
             width="560"
@@ -201,5 +204,35 @@ export default {
   background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/geo-darkblue.png);
   width: 100%;
   position: relative;
+}
+.chevron {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.hero-text{
+    position:absolute;
+    height:600px;
+    width:100%;
+    top:105%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+    /* transform: translateY(-300%); */
+    /* height:20vh; */
+    /* bottom:200%; */
+    /* left:50%;
+    top:50%;
+    transform:translate(-50%,-50%); */
+    word-wrap: break-word;
+    /* background-color:rgba(0, 0, 0, 0.1); */
+    /* opacity:0.4; */
 }
 </style>

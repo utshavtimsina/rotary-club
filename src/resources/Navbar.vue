@@ -55,7 +55,7 @@
                   dense
                   shaped
                   color="grey lighten-4 text-wrap"
-                  style="max-width:15rem;text-transform: lowercase;"
+                  style="max-width:15rem;"
                 >
                   <v-list-item>
                     <v-list-item-content>
@@ -78,8 +78,11 @@
                     <v-list-item-title>
                       <router-link to="/history">
                         <v-hover v-slot:default="{ hover }">
-                          <v-btn depressed class="overline" @click="btnClicked">
+                          <v-btn depressed class="overline" @click="btnClicked"
+                          style="text-transform:none"
+                          >
                             <v-icon
+                            
                               v-if="hover"
                               class="title transition-fast-in-fast-out"
                             >mdi-arrow-right-drop-circle-outline</v-icon>
@@ -845,5 +848,9 @@ a {
   /* /z-index: 1; */
 
   opacity: 1;
+}
+v-btn{
+  text-transform:capitalize;
+  background-color: red;
 }
 </style>

@@ -1,27 +1,31 @@
 <template>
   <div>
     <v-card flat class="structure">
-      <v-container style="text-align: center;">
-        <v-layout column style="position:absolute; bottom:0; left:40%;">
-          <p class="display-3 my-8 white--text text-center">Supporting Education</p>
-        </v-layout>
-      </v-container>
+       <div class="hero-text">
+       <p
+          class="display-3  white--text text-center"
+        >
+         Supporting Education
+          <br />
+          <v-icon color="white" size="60px" class="chevron">mdi-chevron-down</v-icon>
+        </p>
+    </div>
     </v-card>
-    <div style="margin:0% 20%;">
+    <v-flex md6 class="mx-auto">
       <p
         class="pa-3 display-2 font-weight-light wf-active"
       >More than 775 million people over the age of 15 are illiterate. That’s 17 percent of the world’s adult population.</p>
       <p
         class="pa-3 title font-weight-light"
       >Our goal is to strengthen the capacity of communities to support basic education and literacy, reduce gender disparity in education, and increase adult literacy. We support education for all children and literacy for children and adults.</p>
-    </div>
+    </v-flex>
     <div class="images my-0">
-      <div style="margin:0% 20%;">
+      <v-flex md5 class="mx-auto">
         <h1 class="pa-3 display-1 text-center font-weight-light">HOW ROTARY MAKES HELP HAPPEN</h1>
         <p class="pa-3 title font-weight-light">
           We take action to empower educators to inspire learning at all ages.
           <v-carousel
-            style="width:60%; border:1px solid #e3dfde"
+            style="width:100%; border:1px solid #e3dfde"
             class="mx-auto"
             hide-delimiters
             height="100%"
@@ -41,12 +45,11 @@
             </v-carousel-item>
           </v-carousel>
         </p>
-      </div>
+      </v-flex>
     </div>
     <div class="imagess">
       <v-layout>
-        <v-flex></v-flex>
-        <v-flex class="pa-10">
+        <v-flex  md4 class="mx-auto">
           <iframe
             width="560"
             height="315"
@@ -58,7 +61,7 @@
         </v-flex>
       </v-layout>
     </div>
-    <div style="margin:0% 20%;">
+    <v-flex md10 class="mx-auto">
       <v-container>
         <h1 class="text-center">OUR IMPACT ON EDUCATION</h1>
         <p
@@ -100,7 +103,7 @@
           class="pa-3 display-2 font-weight-light wf-active"
         >" When you teach somebody how to read, they have that for a lifetime. It ripples through the community, one by one."</p>
       </v-container>
-    </div>
+    </v-flex>
 
     <div style="margin:5% 0%; position:relative;">
       <v-img
@@ -185,5 +188,35 @@ export default {
 }
 .imagess {
   background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/geo-green.png);
+}
+.chevron {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.hero-text{
+    position:absolute;
+    height:600px;
+    width:100%;
+    top:105%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+    /* transform: translateY(-300%); */
+    /* height:20vh; */
+    /* bottom:200%; */
+    /* left:50%;
+    top:50%;
+    transform:translate(-50%,-50%); */
+    word-wrap: break-word;
+    /* background-color:rgba(0, 0, 0, 0.1); */
+    /* opacity:0.4; */
 }
 </style>

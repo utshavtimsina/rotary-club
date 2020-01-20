@@ -1,20 +1,24 @@
 <template>
   <div>
     <v-card flat class="structure">
-      <v-container style="text-align: center;">
-        <v-layout column>
-          <p class="display-3 my-8 white--text text-center">Our Causes</p>
-        </v-layout>
-      </v-container>
+       <div class="hero-text">
+        <p
+          class="display-3  white--text text-center"
+        >
+        Our Causes
+          <br />
+          <v-icon color="white" size="60px" class="chevron">mdi-chevron-down</v-icon>
+        </p>
+      </div>
     </v-card>
     <div class="images my-0">
-      <div style="margin:0% 20%;">
+      <v-flex md8 class="mx-auto mt-9">
         <p
-          style="margin:10% 0%;"
+          
           class="pa-3 display-1 font-weight-light"
         >Rotary is dedicated to six areas of focus to build international relationships, improve lives, and create a better world to support our peace efforts and end polio forever.</p>
-      </div>
-      <div style="margin:0% 20%;">
+      </v-flex>
+      <v-flex md10 class="mx-auto">
         <v-container>
           <v-layout row>
             <v-flex sm6 md4>
@@ -208,7 +212,7 @@
             </v-flex>
           </v-layout>
         </v-card>
-      </div>
+      </v-flex>
     </div>
     <pagefooter />
   </div>
@@ -231,9 +235,39 @@ export default {
   background-size: cover; /* Resize the background image to cover the entire container */
   width: 100%;
   padding: 5% 3%;
-  height: 400px;
+  height: 600px;
 }
 .images {
   background: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/concrete_seamless.jpg);
+}
+.chevron {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.hero-text{
+    position:absolute;
+    height:600px;
+    width:100%;
+    top:105%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+    /* transform: translateY(-300%); */
+    /* height:20vh; */
+    /* bottom:200%; */
+    /* left:50%;
+    top:50%;
+    transform:translate(-50%,-50%); */
+    word-wrap: break-word;
+    /* background-color:rgba(0, 0, 0, 0.1); */
+    /* opacity:0.4; */
 }
 </style>

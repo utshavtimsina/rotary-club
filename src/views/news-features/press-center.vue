@@ -147,6 +147,7 @@
             </v-layout>
          
         </v-card>
+        <iframe class="wakeletEmbed" width="100%" height="760" src="https://embed.wakelet.com/wakes/bab1ca2d-d792-4ff9-a6df-68305e6c82f3/list" style="border: none; overflow: hidden; height: 4590px;"  ></iframe>
     </div>
   </div>
 </template>

@@ -33,23 +33,21 @@
     <v-container>
       <div class="social-media-posts">
         <p class="title">Social media posts from Rotary International</p>
-        <v-layout row>
-          <v-flex md3 v-for="(cards,k) in news_features" :key="k">
-            <v-card  tile flat class="ma-2 pa-4">
-              <p class="subtitle-2">
-                <strong>{{cards.title}}</strong>
-              </p>
-              <h3 class="font-weight-light">{{cards.content}}</h3>
-              <p class="mt-8 font-weight-light">{{cards.title}} | {{cards.date}}</p>
-            </v-card>
-          </v-flex>
-        </v-layout>
+        <iframe
+          src="https://embed.miappi.com/embed/rotaryinternational"
+          id="miappi-iframe"
+          seamless="true"
+          allowtransparency="true"
+          allow="autoplay"
+          style="border-width: 0px; padding: 0px; overflow: hidden; width: 100%; height: 2845px; display: block;"
+        ></iframe>
       </div>
     </v-container>
+
     <div class="wrapper">
       <div
         class="grid-test"
-      >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel optio esse, nemo minus magni odit accusamus animi amet doloribus, quod iste? Ut quam libero odit rem esse, perferendis voluptate voluptas.</div>
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore consequuntur adipisci harum. Laboriosam laborum aliquid numquam enim beatae repellat perferendis. Molestiae perspiciatis dolore vel similique obcaecati beatae facere at inventore optio distinctio accusantium, vero minima itaque laudantium molestias impedit nulla! Recusandae excepturi earum tempore voluptas molestias dolor in temporibus.</div>
       <div class="overlap">this is a grid overlap test</div>
     </div>
   </div>
@@ -225,23 +223,26 @@ export default {
   margin: auto;
   display: grid;
   padding: 1em;
-  width: 40em;
-  grid-template-columns: 1fr, 1fr;
+  width: 60%;
+  word-wrap: break-word;
+  align-self: auto;
+  grid-template-columns: 1fr,1fr;
   background-color: antiquewhite;
 }
-.grid-test {
+.grid-test {  
   background-color: cadetblue;
-  grid-column: 1/12;
-  grid-row: 1/4;
+   grid-column: 1/12; 
+  grid-row: 1/4; 
+  word-wrap: break-word;
   /* grid-template-columns: 0.5fr; */
-  justify-content: center;
 }
 .overlap {
   background: black;
-  opacity: 0.7;
+  word-wrap: break-word;
+  opacity: 0.5;
   color: white;
-  grid-column: 1/12;
-  grid-row: 2/4;
+   grid-column: 1/12; 
+   grid-row: 3/4; 
   justify-content: center;
 }
 </style>

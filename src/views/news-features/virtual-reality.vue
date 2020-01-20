@@ -2,24 +2,31 @@
   <div 
   style="background:white;margin-top:56px;" 
   class="text-center">
-  <div id="video-div" style="position:relative;">
-      <video  width="100%" autoplay loop muted class="hero-video" 
+ 
+ 
+  <div class="video-div">
+    <div class="hero-text mx-auto">
+ 
+        <p
+          class="display-3 white--text text-center font-weight-thin"
+        >
+          Step into another world
+          <br/>
+        </p>
+        <p>
+          <v-icon color="white" size="60px" class="chevron">mdi-chevron-down</v-icon>
+        </p>
+      </div>
+ 
+      <video autoplay loop muted class="hero-video" width="100%"
       >
+     
         <source 
-          
           src="https://www.rotary.org/sites/default/files/2018_075_TwoDropsofPatience_ambient.mp4"
           type="video/mp4"
         />
       </video>
-      <div class="hero-text">
-        <p
-          class="display-3 my-8 white--text text-center"
-        >
-          Step into another world
-          <br />
-          <v-icon color="white" size="60px" class="chevron">mdi-chevron-down</v-icon>
-        </p>
-      </div>
+ 
   </div>
     <div class="page-content mt-12">
       <v-container>
@@ -100,8 +107,9 @@
             color="#c10042"
             width="100%"
             height="8vh"
+            style="text-transform:capitalize"
             >
-              ANDROID
+              android
             </v-btn>
             <v-btn
             flat
@@ -242,30 +250,41 @@ export default {
     transform: translateY(0px);
   }
   100% {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
 }
-#video-div{
-  height:550px;
+.video-div{
+  display:grid;
+  grid-template-columns: auto;
+  height:82vh;
   overflow:hidden;
+  
+}
+.hero-video{
+  /* height:100%; */
+  grid-column:1/12;
+  grid-row:1/20;
+  width:100%;
 }
 .hero-text{
-    position:absolute;
-    height:150px;
     width:100%;
-    top:75%;
-    left:50%;
-    transform:translate(-50%,-50%); 
-    /* transform: translateY(-300%); */
-    /* height:20vh; */
-    /* bottom:200%; */
-    /* left:50%;
-    top:50%;
-    transform:translate(-50%,-50%); */
-    word-wrap: break-word;
-    /* background-color:rgba(0, 0, 0, 0.1); */
-    /* opacity:0.4; */
+    grid-column:1/12;
+    grid-row:6/16;
+    color:white;
+    /* margin-top:60Vh; */
+    /* transform:translateY(10%); */
+    /* width:50%; */
+    /* align-self: baseline; */
+    /* margin-top:60vh; */
+    z-index:2;
+    /* position:absolute; */
+    /* height:150px; */
+    /* width:100%; */
+    /* top:15%; */
+    /* left:50%; */
+    /* transform:translate(-50%,-50%);  */
 }
+
 .dark-blue{
   background: url('https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/geo-darkblue.png')
 }

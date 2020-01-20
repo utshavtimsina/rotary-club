@@ -5,7 +5,7 @@
     <!-- image section of layout row starts -->
     <div class="text-center white--text" style="height:450px">
       <v-layout row style="height:100%">
-        <v-flex md6 style="overflow:hidden;height:100%;width:50%" class="zoom">
+        <v-flex md6 xs12 style="overflow:hidden;height:100%;width:50%" class="zoom">
           <div style="overflow:hidden">
             <v-img
               class="zooms"
@@ -29,9 +29,9 @@
               <!-- left img content ends -->
           </div>
         </v-flex>
-        <v-flex md6 style="height:100%;width:50%">
+        <v-flex md6 sm12 style="height:100%;width:50%">
           <v-layout column style="height:100%;width:100%">
-            <v-flex style="height:50%;width:100%">
+            <v-flex md6 style="height:50%;width:100%">
               <div style="overflow:hidden;height:100%;width:100%" class="zoom">
                 <v-img
                   class="zooms"
@@ -49,7 +49,7 @@
               </div>
             </v-flex>
 
-            <v-flex style="height:50%;width:100%">
+            <v-flex md6 sm12 style="height:50%;width:100%">
               <div style="overflow:hidden;height:100%;width:100%" class="zoom">
                 <v-img
                   class="zooms"
@@ -85,7 +85,7 @@
         <input type="checkbox" class="mr-2">
         <label >Press Release</label>
       </v-flex>
-        <v-flex class="mt-12 mx-auto" id="news&features" md11>
+        <v-flex md10 class="mt-12 mx-auto" id="news&features" md11>
         <v-layout row>
           <!-- <v-flex></v-flex> -->
           <v-flex md3
@@ -232,7 +232,7 @@ export default {
   transition: transform 1.5s;
 }
 .zoom:hover .zooms {
-  transform: scale(1.1) translateZ(0);
+  transform: scale(1.1);
   transition: transform 1.5s;
 }
 #seamless {

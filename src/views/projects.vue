@@ -1,24 +1,29 @@
 <template>
   <div>
     <v-card flat class="structure">
-      <v-container style="text-align: center;">
-        <v-layout column>
-          <p class="display-3 my-8 white--text text-center" style="position: absolute;bottom:10%;left:50%;transform:translate(-50%,-50%)">Projects</p>
-        </v-layout>
-      </v-container>
+      <div class="hero-text">
+        <p
+          class="display-3  white--text text-center"
+        >
+         Projects
+          <br />
+          <v-icon color="white" size="60px" class="chevron">mdi-chevron-down</v-icon>
+        </p>
+      </div>
     </v-card>
     <v-card class="card pt-8 pb-8" flat>
-      <div style="width:60%;display:inline-block">
+      <v-flex md10 class="mx-auto">
         <p
-          class="display-1 mx-auto"
+          class="display-1 mt-9"
         >Are you looking for a way to make a difference in your community or communities around the world? There’s a project happening that needs you.</p>
         <p
-          class="text-left title font-weight-light"
+          class="text-left title font-weight-light mt-7"
         >We use our knowledge of local issues to identify areas of need, then apply our expertise and diverse perspectives to find a solution. Rotary members likely are working in your community right now to feed the hungry, tutor disadvantaged children, maintain parks and playgrounds, and much more. You can help.</p>
-      </div>
+      </v-flex>
       <!-- Carousel -->
+       <v-flex md5 class="mx-auto">
       <v-carousel
-        style="width:31%; border:1px solid #e3dfde"
+        style="width:100%; border:1px solid #e3dfde"
         class="mx-auto"
         hide-delimiters
         height="100%"
@@ -37,6 +42,7 @@
           </v-sheet>
         </v-carousel-item>
       </v-carousel>
+       </v-flex>
       <div class="mt-12">
         <v-btn class="white--text" tile color="#018d8d" width="400px" height="50px">EXPLORE PROJECTS</v-btn>
         <br />
@@ -144,6 +150,36 @@ export default {
 </script>
 
 <style>
+.chevron {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.hero-text{
+    position:absolute;
+    height:600px;
+    width:100%;
+    top:105%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+    /* transform: translateY(-300%); */
+    /* height:20vh; */
+    /* bottom:200%; */
+    /* left:50%;
+    top:50%;
+    transform:translate(-50%,-50%); */
+    word-wrap: break-word;
+    /* background-color:rgba(0, 0, 0, 0.1); */
+    /* opacity:0.4; */
+}
 .structure {
   background-image: url(https://www.rotary.org/sites/default/files/styles/w_2800/public/GI%20projects%20hero2%202800x1800_0.jpg?itok=HFauKIh8);
   background-attachment: fixed;
