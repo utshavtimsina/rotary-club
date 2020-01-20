@@ -49,7 +49,7 @@
     <div class="wrapper">
       <div
         class="grid-test"
-      >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel optio esse, nemo minus magni odit accusamus animi amet doloribus, quod iste? Ut quam libero odit rem esse, perferendis voluptate voluptas.</div>
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore consequuntur adipisci harum. Laboriosam laborum aliquid numquam enim beatae repellat perferendis. Molestiae perspiciatis dolore vel similique obcaecati beatae facere at inventore optio distinctio accusantium, vero minima itaque laudantium molestias impedit nulla! Recusandae excepturi earum tempore voluptas molestias dolor in temporibus.</div>
       <div class="overlap">this is a grid overlap test</div>
     </div>
   </div>
@@ -212,7 +212,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .main-div {
   margin-top: 56px;
   text-align: center;
@@ -225,23 +225,26 @@ export default {
   margin: auto;
   display: grid;
   padding: 1em;
-  width: 40em;
-  grid-template-columns: 1fr, 1fr;
+  width: 60%;
+  word-wrap: break-word;
+  align-self: auto;
+  grid-template-columns: 1fr,1fr;
   background-color: antiquewhite;
 }
-.grid-test {
+.grid-test {  
   background-color: cadetblue;
-  grid-column: 1/12;
-  grid-row: 1/4;
+   grid-column: 1/12; 
+  grid-row: 1/4; 
+  word-wrap: break-word;
   /* grid-template-columns: 0.5fr; */
-  justify-content: center;
 }
 .overlap {
   background: black;
-  opacity: 0.7;
+  word-wrap: break-word;
+  opacity: 0.5;
   color: white;
-  grid-column: 1/12;
-  grid-row: 2/4;
+   grid-column: 1/12; 
+   grid-row: 3/4; 
   justify-content: center;
 }
 </style>

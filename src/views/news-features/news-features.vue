@@ -226,13 +226,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .zoom:not(:hover) .zooms {
   /* transform:scale(1) translateZ(0); */
   transition: transform 1.5s;
 }
 .zoom:hover .zooms {
-  transform: scale(1.1) translateZ(0);
+  transform: scale(1.1);
   transition: transform 1.5s;
 }
 #seamless {
