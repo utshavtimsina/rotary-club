@@ -344,7 +344,7 @@
               <!-- next navbar item -->
             </div>
             <div style="display:inline-block;">
-              <Span>Our Caues</Span>
+              <Span>Our Cause</Span>
               <div class="content caption">
                 <v-list
                   dense
@@ -492,6 +492,87 @@
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-title class="caption"></v-list-item-title>
+                  </v-list-item>
+                </v-list>
+              </div>
+            </div>
+            <!-- News & Features -->
+            <div style="display:inline-block;">
+              <Span>News & Features</Span>
+              <div class="content caption">
+                <v-list
+                  dense
+                  shaped
+                  color="grey lighten-4 text-wrap"
+                  style="max-width:15rem;text-transform: lowercase;"
+                >
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        <router-link to="/news-features">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>All News & Features
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                      </v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        <router-link to="/news-features/press-center">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Press Center
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                      </v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        <router-link to="/news-features/social-media">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Social Media
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                      </v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        <router-link to="/news-features/virtual-reality">
+                          <v-hover v-slot:default="{ hover }">
+                            <v-btn depressed class="overline" @click="btnClicked">
+                              <v-icon
+                                v-if="hover"
+                                class="title transition-fast-in-fast-out"
+                              >mdi-arrow-right-drop-circle-outline</v-icon>
+                              <v-icon class="title white--text" v-else>mdi-check-circle-outline</v-icon>Virtual Reality
+                            </v-btn>
+                          </v-hover>
+                        </router-link>
+                      </v-list-item-title>
+                    </v-list-item-content>
                   </v-list-item>
                 </v-list>
               </div>

@@ -156,6 +156,26 @@ const routes = [
     component:()=> import ('../views/our-programs/friendship-exchange.vue'),
 
   },
+  {
+    path:'/news-features',
+    component:()=> import ('../views/news-features/news-features.vue'),
+
+  },
+  {
+    path:'/news-features/press-center',
+    component:()=> import ('../views/news-features/press-center.vue'),
+
+  },
+  {
+    path:'/news-features/virtual-reality',
+    component:()=> import ('../views/news-features/virtual-reality.vue'),
+
+  },
+  {
+    path:'/news-features/social-media',
+    component:()=> import ('../views/news-features/social-media.vue'),
+
+  },
   
   
 ]

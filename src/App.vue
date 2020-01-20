@@ -21,3 +21,8 @@ export default {
   }),
 };
 </script>
+<style>
+a:hover {
+  background-color: #ccf1ff;
+}
+</style>
