@@ -2,8 +2,8 @@
    <div>
 
      <v-container >
+      
        <v-layout row  style="background:url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/network.png) no-repeat 50% 50%">
-         <v-spacer></v-spacer>
          <v-flex md2 class=" mx-9 my-9 transparent">
             <div class="differences-person-1 transparent" ></div>
          </v-flex>
@@ -37,28 +37,6 @@
             <div class="differences-person-9 transparent"></div>
          </v-flex>
        </v-layout>
-       <v-layout row>
-         <v-flex md1>
-
-         </v-flex>
-         <v-flex md4>
-           <v-card class="pa-5">
-            <h3 class="display-1">We Transform Communities</h3>
-              <hr class="light-blue">
-            <p class="caption pa-2">We take action locally and globally</p>
-
-            <p>
-              Each day, our members pour their passion, integrity, and intelligence into completing projects that have a lasting impact. We persevere until we deliver real, lasting solutions.
-            </p>
-           </v-card>
-          
-         </v-flex>
-           <v-flex md4>
-         
-             <img width="100%"  height="100%" data-src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/difference-transform-people.png" style="transform: translate3d(0px, 95.5px, 0px);" src="https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/difference-transform-people.png">
-              
-         </v-flex>
-       </v-layout>
      </v-container>
             
      <HomeComponentExtend/>
@@ -66,7 +44,6 @@
 </template>
 
 <script>
-import HomeComponentExtend from '@/components/HomeComponentExtend.vue'
 export default {
   data(){
     return{
@@ -74,7 +51,6 @@ export default {
     }
   },
   components:{
-    HomeComponentExtend,
   }
 }
 </script>
@@ -89,63 +65,65 @@ export default {
     position: relative;
 }
 .transparent {
-   background-color: white!important;
-   opacity: 0.9;
-   border-color: transparent!important;
+   
+   opacity: 1;
+   z-index: 4;
+    
  }
 .differences-person-1 {
     background-image:url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/person-1.jpg);
     height: 153px;
     width: 153px;
-    margin: 60px 0 0 -46.15385%;  
+   transform: translate(300%,-30%);  
 }
 .differences-person-2 {
     background-image: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/person-2.jpg);
     height: 153px;
     width: 153px;
-    margin: 70px 0 0 -33.84615%;
+    transform: translate(200%,-200%);  
+    z-index: initial;
 
 }
 .differences-person-3 {
     background-image: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/person-3.jpg);
      height: 153px;
     width: 153px;
-    margin: -108px 0 0 +20.76923%;
+  transform: translate(-200%,100%);  
 }
 .differences-person-4 {
     background-image: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/person-4.jpg);
     height: 153px;
     width: 153px;
-    margin: 95px 0 0 +15.38462%;
+   transform: translate(-300%,200%);  
 }
 .differences-person-5 {
     background-image: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/person-5.jpg);
     height: 153px;
     width: 153px;
-    margin: -295px 0 0 -4.61538%
+   transform: translate(-50%,100%);  
 }
 .differences-person-6 {
     background-image: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/person-6.jpg);
      height: 153px;
     width: 153px;
-    margin: 260px 0 0 9.23077%;
+   transform: translate(-40%,-60%);  
 }
 .differences-person-7 {
     background-image: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/person-7.jpg);
     height: 153px;
     width: 153px;
-    margin: 20px 0 0 8.46154%;
+    transform: translate(900%,00%);  
 }
 .differences-person-8 {
     background-image: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/person-8.jpg);
      height: 153px;
     width: 153px;
-    margin: -150px 0 0 27.69231%;
+    transform: translate(200%,-200%);  
 }
 .differences-person-9 {
     background-image: url(https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/home/person-9.jpg);
     height: 153px;
     width: 153px;
-    margin: -480px 0 0 -7.69231%;
+   transform: translate(-60%,-300%);  
 }
 </style>

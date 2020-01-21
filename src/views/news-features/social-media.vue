@@ -1,5 +1,6 @@
 <template>
   <div class="main-div">
+      
     <firstelement PageName="Social Media"></firstelement>
     <div class="mb-12" id="page-content">
       <v-container>
@@ -7,7 +8,8 @@
           <h2>Follow Us</h2>
 
           <v-layout row v-for="(media,i) in medias" :key="i" class="mt-12 ml-12 text-left">
-            <v-flex md2>
+            <v-flex></v-flex>
+            <v-flex md4  >
               <v-img :src="media.img" height="130px" width="130px" class="ml-12"></v-img>
             </v-flex>
             <v-flex md7>
@@ -27,23 +29,17 @@
               </div>
             </v-flex>
           </v-layout>
+           
         </div>
       </v-container>
     </div>
     <v-container>
       <div class="social-media-posts">
         <p class="title">Social media posts from Rotary International</p>
-        <iframe
-          src="https://embed.miappi.com/embed/rotaryinternational"
-          id="miappi-iframe"
-          seamless="true"
-          allowtransparency="true"
-          allow="autoplay"
-          style="border-width: 0px; padding: 0px; overflow: hidden; width: 100%; height: 2845px; display: block;"
-        ></iframe>
+       
       </div>
     </v-container>
-
+   <iframe class="wakeletEmbed" allowfullscreen width="100%" height="760"  src="https://embed.miappi.com/rotaryinternational" style="border: none;   "  ></iframe>
     <div class="wrapper">
       <div
         class="grid-test"
@@ -61,6 +57,7 @@ export default {
   },
   data: function() {
     return {
+      k:-1,
       medias: [
         {
           img:
