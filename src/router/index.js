@@ -176,7 +176,11 @@ const routes = [
     component:()=> import ('../views/news-features/social-media.vue'),
 
   },
-  
+  {
+    path:'/profile',
+    component:()=> import ('../views/profile.vue'),
+
+  },
   
 ]
 
