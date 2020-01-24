@@ -181,6 +181,18 @@ const routes = [
     component:()=> import ('../views/profile.vue'),
 
   },
+  {
+    path:'/login',
+    component:()=> import ('@/views/member/login.vue'),
+
+  },
+  {
+    path:'/user',
+    component:()=> import ('@/views/member/user.vue'),
+
+  },
+  
+  
   
 ]
 
